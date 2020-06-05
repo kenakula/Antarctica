@@ -9,6 +9,16 @@
     menuList.classList.remove('main-nav__list--expanded');
   }
 
-  menuToggler.addEventListener('click')
+  menuToggler.addEventListener('click', function () {
+    if (!this.classList.contains('main-nav__button--close')) {
+      this.classList.add('main-nav__button--close');
+      pageLogo.classList.add('page-header__logo--dark');
+      menuList.classList.add('main-nav__list--expanded');
+    } else {
+      this.classList.remove('main-nav__button--close');
+      pageLogo.classList.remove('page-header__logo--dark');
+      menuList.classList.remove('main-nav__list--expanded');
+    }
+  })
 
 })();
