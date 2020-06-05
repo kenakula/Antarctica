@@ -1,0 +1,30 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+@mixin push-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin transition($curve: $trans-curve, $speed: $trans-speed) {
+  transition: all $trans-speed $trans-curve;
+}
