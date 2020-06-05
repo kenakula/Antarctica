@@ -13,7 +13,7 @@
     } else {
       window.vendor.closeMenu();
     }
-  }
+  };
 
   menuToggler.addEventListener('click', onTogglerClickMenuToggle);
 

@@ -1,10 +1,11 @@
 .page-header {
+  flex: 0 0 auto;
   min-height: 650px;
   color: $white;
   background-color: #87a7d4;
   background-image: url("../img/header-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
   background-size: cover;
 
   @media (min-resolution: $retina) {

@@ -1,0 +1,32 @@
+.socials__list {
+  @include list-reset;
+
+  display: flex;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: $desktop) {
+  .socials__item {
+    margin-right: 22px;
+  }
+
+  .socials__icon {
+    width: 16px;
+    height: 16px;
+  }
+}

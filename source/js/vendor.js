@@ -27,6 +27,6 @@
     activateJs: activateJs,
     openMenu: openMenu,
     closeMenu: closeMenu,
-  }
+  };
 
 })();

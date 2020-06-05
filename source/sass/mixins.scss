@@ -30,6 +30,6 @@
 }
 
 @mixin full-width-vw {
-  margin-left: calc(-100vw / 2 + 290px / 2);
-  margin-right: calc(-100vw / 2 + 290px / 2);
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
 }
