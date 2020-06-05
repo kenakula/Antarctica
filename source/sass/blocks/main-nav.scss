@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  padding-top: 9px;
   min-width: 51.2%;
 }
 
@@ -34,5 +35,84 @@
   &:focus,
   &:hover {
     opacity: 0.7;
+  }
+}
+
+@media (max-width: $desktop) {
+  .main-nav {
+    padding-top: 0;
+    min-width: 74.2%;
+  }
+
+  .main-nav__link {
+    font-size: rem(14);
+    line-height: 17px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .main-nav {
+    position: relative;
+    width: 100%;
+  }
+
+  .no-js {
+    .main-nav__button {
+      display: none;
+    }
+
+    .main-nav__list {
+      position: static;
+    }
+  }
+
+  .main-nav__button {
+    @include button-reset;
+
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 24px;
+    height: 14px;
+    background-image: url("../../img/burger-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+
+    &--close {
+      width: 14px;
+      height: 14px;
+      background-image: url("../../img/icon-cross.svg");
+    }
+  }
+
+  .main-nav__list {
+    @include full-width-vw;
+
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: -49px;
+    padding: 88px 4.687% 60px;
+    width: 100vw;
+    background-color: $white;
+
+    &--expanded {
+      display: flex;
+    }
+  }
+
+  .main-nav__item {
+    margin-bottom: 19px;
+
+    &--firstonmobile {
+      order: -1;
+    }
+  }
+
+  .main-nav__link {
+    font-size: rem(18);
+    line-height: 22px;
+    color: $main-color;
   }
 }

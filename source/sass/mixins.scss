@@ -32,3 +32,8 @@
 @function rem($size) {
   @return $size / 16 * 1rem;
 }
+
+@mixin full-width-vw {
+  margin-left: calc(-100vw / 2 + 290px / 2);
+  margin-right: calc(-100vw / 2 + 290px / 2);
+}
