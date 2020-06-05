@@ -74,7 +74,7 @@
     right: 0;
     width: 24px;
     height: 14px;
-    background-image: url("../../img/burger-menu.svg");
+    background-image: url("../img/burger-menu.svg");
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
@@ -83,7 +83,7 @@
     &--close {
       width: 14px;
       height: 14px;
-      background-image: url("../../img/icon-cross.svg");
+      background-image: url("../img/icon-cross.svg");
     }
   }
 

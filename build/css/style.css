@@ -343,13 +343,13 @@ svg {
   min-height: 650px;
   color: #f9fbfd;
   background-color: #87a7d4;
-  background-image: url("../../img/header-bg-desktop@1x.jpg");
+  background-image: url("../img/header-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../../img/header-bg-desktop@2x.jpg"); } }
+      background-image: url("../img/header-bg-desktop@2x.jpg"); } }
 
 .page-header__top {
   display: -webkit-box;
@@ -386,10 +386,10 @@ svg {
 @media (max-width: 1023px) {
   .page-header {
     min-height: 638px;
-    background-image: url("../../img/header-bg-tablet@1x.jpg"); } }
+    background-image: url("../img/header-bg-tablet@1x.jpg"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../../img/header-bg-tablet@2x.jpg"); } }
+      background-image: url("../img/header-bg-tablet@2x.jpg"); } }
 
 @media (max-width: 1023px) {
   .page-header__top {
@@ -412,10 +412,10 @@ svg {
 @media (max-width: 767px) {
   .page-header {
     min-height: 500px;
-    background-image: url("../../img/header-bg-mobile@1x.jpg"); } }
+    background-image: url("../img/header-bg-mobile@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../../img/header-bg-mobile@2x.jpg"); } }
+      background-image: url("../img/header-bg-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
   .page-header__top {
@@ -509,7 +509,7 @@ svg {
     right: 0;
     width: 24px;
     height: 14px;
-    background-image: url("../../img/burger-menu.svg");
+    background-image: url("../img/burger-menu.svg");
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
@@ -517,7 +517,7 @@ svg {
     .main-nav__button--close {
       width: 14px;
       height: 14px;
-      background-image: url("../../img/icon-cross.svg"); }
+      background-image: url("../img/icon-cross.svg"); }
   .main-nav__list {
     margin-left: calc(-100vw / 2 + 290px / 2);
     margin-right: calc(-100vw / 2 + 290px / 2);

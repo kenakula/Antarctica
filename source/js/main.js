@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
   var pageLogo = document.querySelector('.page-header__logo');
   var menuToggler = document.querySelector('.main-nav__button');
@@ -10,15 +12,15 @@
   }
 
   menuToggler.addEventListener('click', function () {
-    if (!this.classList.contains('main-nav__button--close')) {
-      this.classList.add('main-nav__button--close');
+    if (!menuToggler.classList.contains('main-nav__button--close')) {
+      menuToggler.classList.add('main-nav__button--close');
       pageLogo.classList.add('page-header__logo--dark');
       menuList.classList.add('main-nav__list--expanded');
     } else {
-      this.classList.remove('main-nav__button--close');
+      menuToggler.classList.remove('main-nav__button--close');
       pageLogo.classList.remove('page-header__logo--dark');
       menuList.classList.remove('main-nav__list--expanded');
     }
-  })
+  });
 
 })();
