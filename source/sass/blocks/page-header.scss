@@ -1,0 +1,39 @@
+.page-header {
+  min-height: 650px;
+  color: $white;
+  background-color: #87a7d4;
+  background-image: url("../../img/header-bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../../img/header-bg-desktop@2x.jpg");
+  }
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.page-header__bottom {
+  padding: 163px 0;
+  padding-left: 95px;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: rem(54);
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 2px;
+}
+
+.page-header__text {
+  margin: 0;
+  font-size: rem(20);
+}

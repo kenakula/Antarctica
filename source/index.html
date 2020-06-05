@@ -4,13 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Круизы в Антарктику">
+  <meta name="keywords" content="Антарктика, круизы, путешествие, природа, туры, экскурсии, походы">
   <title>Antactica</title>
-  <link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <h2>hello world</h2>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <!-- header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__top">
+        <a class="page-header__link">
+          <img class="page-header__logo" src="img/logo.svg" alt="логотип сайта" width="70" height="38">
+        </a>
+        <nav class="page-header__nav main-nav" role="navigation" aria-expanded="false" aria-controls="menu">
+          <button class="main-nav__button" type="button">Меню</button>
+          <ul class="main-nav__list main-nav__list--expanded" id="menu">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Преимущества</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Направления</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Ближайшие круизы</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__bottom">
+        <h1 class="page-header__title">Круизы в Антарктику </h1>
+        <p class="page-header__text">Волшебный мир айсбергов и пингвинов</p>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>

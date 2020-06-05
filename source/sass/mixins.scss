@@ -28,3 +28,7 @@
 @mixin transition($curve: $trans-curve, $speed: $trans-speed) {
   transition: all $trans-speed $trans-curve;
 }
+
+@function rem($size) {
+  @return $size / 16 * 1rem;
+}

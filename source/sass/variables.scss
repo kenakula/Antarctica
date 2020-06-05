@@ -1,12 +1,14 @@
 //fonts
 $font-main: "Montserrat", "Arial", sans-serif;
 //colors
-
+$white: #f9fbfd;
+$main-color: #011c40;
 //widths
 $mobile: 320px;
 $tablet: 767px;
 $desktop: 1023px;
 //resolution
 $retina: 1.5dppx;
-//other
-$margin: calc(-100vw / 2 + 1300px / 2);
+//transition
+$trans-speed: 0.2s;
+$trans-curve: ease;
