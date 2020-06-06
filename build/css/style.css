@@ -611,7 +611,11 @@ svg {
   line-height: 20px;
   font-weight: 500;
   color: #f9fbfd;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .page-footer__link:hover {
+    opacity: 0.7; }
 
 @media (max-width: 1023px) {
   .page-footer {
@@ -672,7 +676,11 @@ svg {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .socials__link:hover {
+    opacity: 0.7; }
 
 @media (max-width: 1023px) {
   .socials__item {
@@ -680,5 +688,68 @@ svg {
   .socials__icon {
     width: 16px;
     height: 16px; } }
+
+.promo {
+  padding: 120px 0; }
+
+.promo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.promo__inner {
+  max-width: 44.827%; }
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 1.75rem;
+  line-height: 42px;
+  font-weight: 600;
+  letter-spacing: 0.5px; }
+
+.promo__text {
+  margin: 0; }
+
+.promo__linebreak {
+  display: none; }
+
+@media (max-width: 1023px) {
+  .promo {
+    padding: 91px 0; }
+  .promo__inner {
+    max-width: 47.787%; }
+  .promo__title {
+    margin-bottom: 18px;
+    max-width: 70%;
+    font-size: 1.625rem;
+    line-height: 36px; }
+  .promo__linebreak {
+    display: block; } }
+
+@media (max-width: 767px) {
+  .promo {
+    padding: 57px 0; }
+  .promo__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .promo__inner {
+    min-width: 100%; }
+  .promo__title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 34px; }
+  .promo__text {
+    margin-bottom: 33px; }
+  .promo__linebreak {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

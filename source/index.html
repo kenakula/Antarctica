@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Круизы в Антарктику">
   <meta name="keywords" content="Антарктика, круизы, путешествие, природа, туры, экскурсии, походы">
-  <title>Antactica</title>
+  <title>Antarctica</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -54,16 +54,43 @@
       </div>
     </div>
   </header>
-  <main class="page-main"></main>
+  <main class="page-main">
+    <!-- promo -->
+    <section class="promo">
+      <div class="promo__container container">
+        <div class="promo__inner">
+          <h2 class="promo__title">Путешествие на край Земли</h2>
+          <p class="promo__text">
+            Это волшебное путешествие поможет вам познакомиться поближе<br class="promo__linebreak"> с удивительным
+            миром Антарктики. Наш круизный лайнер отвезет вас<br class="promo__linebreak"> на край Земли, где вы сможете
+            увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
+          </p>
+        </div>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/promo-img-mobile@1x.webp 1x, img/promo-img-mobile@2x.webp 2x"
+            type="image/webp">
+          <source media="(max-width: 1023px)" srcset="img/promo-img-tablet@1x.webp 1x, img/promo-img-tablet@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 1024px)"
+            srcset="img/promo-img-desktop@1x.webp 1x, img/promo-img-desktop@2x.webp 2x" type="image/webp">
+
+          <source media="(max-width: 767px)" srcset="img/promo-img-mobile@1x.jpg 1x, img/promo-img-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/promo-img-tablet@1x.jpg 1x, img/promo-img-tablet@2x.jpg 2x">
+          <img class="promo__img" src="img/promo-img-desktop@1x.jpg" srcset="img/promo-img-desktop@2x.jpg 2x"
+            alt="Пингвины на снегу">
+        </picture>
+      </div>
+    </section>
+  </main>
   <!-- footer -->
   <footer class="page-footer">
     <div class="page-footer__inner container">
-      <div class="page-footer__logo">
+      <a class="page-footer__logo">
         <span class="visually-hidden">Логотип сайта</span>
         <svg width="70" height="38">
           <use xlink:href="#icon-logo"></use>
         </svg>
-      </div>
+      </a>
       <div class="page-footer__nav">
         <ul class="page-footer__list">
           <li class="page-footer__item">
