@@ -735,7 +735,7 @@ svg {
 
 @media (max-width: 767px) {
   .promo {
-    padding: 57px 0; }
+    padding: 57px 0 65px; }
   .promo__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -751,5 +751,130 @@ svg {
     margin-bottom: 33px; }
   .promo__linebreak {
     display: none; } }
+
+.advantages {
+  padding: 110px 0;
+  background-color: #e3ecf6;
+  background-image: url("../../img/advantages-bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../../img/advantages-bg-desktop@2x.jpg") s; } }
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 1.75rem;
+  line-height: 42px;
+  font-weight: 600;
+  text-align: center; }
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.advantages__item {
+  padding: 30px;
+  max-width: 31.034%;
+  background-color: #f9fbfd; }
+  .advantages__item--zodiac .advantages__text {
+    width: 80%; }
+
+.advantages__inner {
+  margin-bottom: 19px;
+  min-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.advantages__feature {
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 1.125rem;
+  line-height: 27px;
+  font-weight: 500; }
+
+.advantages__text {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 20px; }
+
+.advantages__linebreak {
+  display: none; }
+  .advantages__linebreak--desktop {
+    display: block; }
+
+@media (max-width: 1023px) {
+  .advantages {
+    padding: 90px 0; }
+  .advantages__title {
+    font-size: 1.625rem;
+    line-height: 39px; }
+  .advantages__item {
+    padding: 25px 15px 21px 20px;
+    max-width: 30.383%; }
+    .advantages__item--boat .advantages__text {
+      width: 95%; }
+    .advantages__item--zodiac .advantages__text {
+      width: 98%; }
+  .advantages__inner {
+    min-height: 26px; }
+  .advantages__icon--boat {
+    width: 21px;
+    height: 26px; }
+  .advantages__icon--allinclusive {
+    width: 33px;
+    height: 19px; }
+  .advantages__icon--motorboat {
+    width: 38px;
+    height: 13px; }
+  .advantages__feature {
+    line-height: 25px; }
+  .advantages__linebreak {
+    display: none; }
+    .advantages__linebreak--tablet {
+      display: block; } }
+
+@media (max-width: 767px) {
+  .advantages {
+    padding: 57px 0; }
+  .advantages__title {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    line-height: 36px; }
+  .advantages__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .advantages__item {
+    margin-bottom: 30px;
+    max-width: 100%; }
+    .advantages__item:last-child {
+      margin-bottom: 0; }
+    .advantages__item--boat .advantages__text {
+      width: 100%; }
+    .advantages__item--allinclusive .advantages__text {
+      width: 90%; }
+    .advantages__item--zodiac .advantages__text {
+      width: 100%; }
+  .advantages__feature {
+    width: 75%; }
+  .advantages__linebreak {
+    display: none; }
+    .advantages__linebreak--mobile {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
