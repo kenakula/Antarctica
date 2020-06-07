@@ -1,0 +1,135 @@
+.form {
+  max-width: 38.8%;
+}
+
+.form__form {
+  padding: 44px 50px 40px;
+  height: 100%;
+  background-color: $main-color;
+  color: $white;
+}
+
+.form__text {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: rem(18);
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.form__inner {
+  margin-bottom: 17px;
+
+  &--checkbox {
+    margin-bottom: 27px;
+  }
+}
+
+.form__label {
+  position: relative;
+  padding-left: 23px;
+  font-size: rem(10);
+  line-height: 13px;
+
+  &::before {
+    @include pseudo;
+
+    top: -4px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: $white;
+  }
+
+  &::after {
+    @include pseudo;
+
+    top: 2px;
+    left: 4px;
+    width: 10px;
+    height: 7px;
+    background-image: url("../../img/icon-tick.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.form__input {
+  margin-bottom: 20px;
+  padding: 0 16px;
+  width: 100%;
+  height: 43px;
+  border: none;
+  background-color: $white;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--text {
+    @include placeholder {
+      font-size: rem(14);
+      line-height: 21px;
+      color: $main-color;
+    }
+  }
+}
+
+.form__button {
+  padding: 10px 20px 12px;
+  width: 100%;
+}
+
+@media (max-width: $desktop) {
+  .form {
+    max-width: 69%;
+  }
+
+  .form__form {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .form {
+    max-width: 100%;
+  }
+
+  .form__form {
+    padding: 35px 30px 40px;
+  }
+
+  .form__text {
+    margin-bottom: 28px;
+    font-size: rem(18);
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .form__inner {
+    margin-bottom: 19px;
+
+    &--checkbox {
+      margin-bottom: 27px;
+    }
+  }
+
+  .form__label {
+    display: block;
+    padding-left: 28px;
+    width: 80%;
+    line-height: 12px;
+
+    &::before {
+      top: 1px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &::after {
+      top: 8px;
+      left: 5px;
+    }
+  }
+}

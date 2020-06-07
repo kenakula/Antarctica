@@ -1,5 +1,5 @@
 .cruises {
-  padding: 110px 0;
+  padding: 110px 0 90px;
 }
 
 .cruises__container {
@@ -28,7 +28,7 @@
 
 @media (max-width: $desktop) {
   .cruises {
-    padding: 90px 0;
+    padding: 90px 0 70px;
   }
 
   .cruises__container {
@@ -43,7 +43,7 @@
 
 @media (max-width: $tablet  ) {
   .cruises {
-    padding: 57px 0;
+    padding: 57px 0 35px;
   }
 
   .cruises__list {
