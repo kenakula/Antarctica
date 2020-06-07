@@ -776,7 +776,7 @@ svg {
   background-position: center bottom; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
     .advantages {
-      background-image: url("../../img/advantages-bg-desktop@2x.jpg") s; } }
+      background-image: url("../../img/advantages-bg-desktop@2x.jpg"); } }
 
 .advantages__title {
   margin: 0;
