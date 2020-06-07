@@ -1,5 +1,5 @@
 .advantages {
-  padding: 110px 0;
+  padding: 110px 0 120px;
   background-color: #e3ecf6;
   background-image: url("../../img/advantages-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@
   font-size: rem(28);
   line-height: 42px;
   font-weight: 600;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
@@ -28,7 +29,7 @@
 }
 
 .advantages__item {
-  padding: 30px;
+  padding: 30px 30px 24px;
   max-width: 31.034%;
   background-color: $white;
 
@@ -70,7 +71,7 @@
 
 @media (max-width: $desktop) {
   .advantages {
-    padding: 90px 0;
+    padding: 90px 0 100px;
   }
 
   .advantages__title {
@@ -131,7 +132,7 @@
 
 @media (max-width: $tablet) {
   .advantages {
-    padding: 57px 0;
+    padding: 57px 0 64px;
   }
 
   .advantages__title {
