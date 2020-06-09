@@ -35,3 +35,13 @@
     height: 16px;
   }
 }
+
+@media (max-width: $tablet) {
+  .socials__link {
+    &--fb {
+      .socials__icon {
+        width: 10px;
+      }
+    }
+  }
+}
