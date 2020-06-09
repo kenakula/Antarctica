@@ -100,7 +100,11 @@
 
 @media (max-width: $tablet) {
   .card {
-    max-width: 100%;
+    max-width: 270px;
+  }
+
+  .card__img {
+    width: auto;
   }
 
   .card__caption {

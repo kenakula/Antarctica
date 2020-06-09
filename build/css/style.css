@@ -936,6 +936,13 @@ svg {
   .cruises {
     padding: 57px 0 35px; }
   .cruises__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -1026,7 +1033,9 @@ svg {
 
 @media (max-width: 767px) {
   .card {
-    max-width: 100%; }
+    max-width: 270px; }
+  .card__img {
+    width: auto; }
   .card__caption {
     bottom: 17px;
     left: 26px; }
