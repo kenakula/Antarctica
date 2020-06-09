@@ -1130,6 +1130,9 @@ svg {
   .booking__inner {
     margin-bottom: 34px; }
   .booking__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     font-size: 1rem;
     line-height: 22px; }
   .booking__linebreak {
