@@ -725,11 +725,11 @@ svg {
 
 .promo__title {
   margin: 0;
-  margin-bottom: 25px;
   font-size: 1.75rem;
   line-height: 42px;
   font-weight: 600;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  margin-bottom: 25px; }
 
 .promo__text {
   margin: 0; }
@@ -782,11 +782,11 @@ svg {
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 49px;
   font-size: 1.75rem;
   line-height: 42px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  margin-bottom: 49px;
   text-align: center; }
 
 .advantages__list {
@@ -903,11 +903,11 @@ svg {
 
 .cruises__title {
   margin: 0;
-  margin-bottom: 49px;
   font-size: 1.75rem;
   line-height: 42px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  margin-bottom: 49px;
   text-align: center; }
 
 .cruises__list {
@@ -1259,6 +1259,20 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.contacts__map {
+  position: relative; }
+  .contacts__map::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 293px;
+    bottom: 67px;
+    width: 18px;
+    height: 22px;
+    background-image: url("../../img/icon-pin.svg");
+    background-repeat: no-repeat;
+    background-position: center center; }
+
 .contacts__info {
   padding-top: 76px;
   width: 43.103%; }
@@ -1314,9 +1328,6 @@ svg {
     width: 324px;
     height: 335px; }
   .contacts__map::before {
-    content: "";
-    display: block;
-    position: absolute;
     bottom: 95px;
     right: 197px; }
   .contacts__info {
@@ -1343,6 +1354,9 @@ svg {
   .contacts__map-img {
     width: 290px;
     height: 316px; }
+  .contacts__map::before {
+    bottom: 70px;
+    right: 160px; }
   .contacts__info {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;

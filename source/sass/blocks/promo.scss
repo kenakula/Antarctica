@@ -13,12 +13,9 @@
 }
 
 .promo__title {
-  margin: 0;
+  @include title;
+
   margin-bottom: 25px;
-  font-size: rem(28);
-  line-height: 42px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .promo__text {
