@@ -1345,14 +1345,15 @@ input[type=checkbox]:focus + label::before {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 560px;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px solid black; }
   .contacts__map img {
     position: relative; }
   .contacts__map::before {
     content: "";
     display: block;
     position: absolute;
-    left: 249px;
+    left: 44.464%;
     bottom: 67px;
     width: 18px;
     height: 22px;
@@ -1423,6 +1424,7 @@ input[type=checkbox]:focus + label::before {
       bottom: 95px;
       left: 109px; }
     .contacts__map img {
+      left: -25px;
       height: 100%; }
   .contacts__info {
     padding-top: 66px;
@@ -1440,19 +1442,20 @@ input[type=checkbox]:focus + label::before {
 
 @media (max-width: 767px) {
   .contacts {
-    padding: 58px 0 65px; }
+    padding: 58px 0 63px; }
   .contacts__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
   .contacts__map {
-    max-width: 100%;
+    max-width: 290px;
     min-height: 316px; }
     .contacts__map::before {
-      left: 38.62%;
+      left: 38.620%;
       bottom: 70px; }
     .contacts__map img {
+      left: 0;
       height: 316px; }
   .contacts__info {
     -webkit-box-ordinal-group: 0;
