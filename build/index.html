@@ -72,16 +72,10 @@
             увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
           </p>
         </div>
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/promo-img-mobile@1x.webp 1x, img/promo-img-mobile@2x.webp 2x" type="image/webp">
-          <source media="(max-width: 1023px)" srcset="img/promo-img-tablet@1x.webp 1x, img/promo-img-tablet@2x.webp 2x" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="img/promo-img-desktop@1x.webp 1x, img/promo-img-desktop@2x.webp 2x" type="image/webp">
-
-          <source media="(max-width: 767px)" srcset="img/promo-img-mobile@1x.jpg 1x, img/promo-img-mobile@2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="img/promo-img-tablet@1x.jpg 1x, img/promo-img-tablet@2x.jpg 2x">
+        <div class="promo__img-wrap">
           <!-- 1x: 560px 2x: 1120px -->
-          <img src="img/promo-img-desktop@1x.jpg" srcset="img/promo-img-desktop@2x.jpg 2x" width="560" height="301" alt="Пингвины на снегу">
-        </picture>
+          <img src="img/promo-img-desktop@1x.jpg" srcset="img/promo-img-desktop@1x.jpg 2x" width="560" height="301" alt="Пингвины на снегу">
+        </div>
       </div>
     </section>
     <!-- advantages -->
@@ -130,16 +124,20 @@
           <li class="cruises__item card">
             <figure class="card__figure">
               <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-astoria-desktop@1x.webp 1x, img/cruise-astoria-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet@1x.webp 1x, img/cruise-astoria-tablet@2x.webp 2x" type="image/webp">
-
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
+                <!-- <source media="(min-width: 1024px)"
+                  srcset="img/cruise-astoria-desktop@1x.webp 1x, img/cruise-astoria-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-astoria-tablet@1x.webp 1x, img/cruise-astoria-tablet@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
+                <img src="img/cruise-astoria-desktop@1x.jpg" srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Астория">
+              </picture> -->
                 <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-astoria-desktop@1x.jpg" srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Астория">
-              </picture>
-              <figcaption>Круиз “Астория”</figcaption>
-            </figure>
+                <img src="img/cruise-astoria-tablet@1x.jpg" srcset="img/cruise-astoria-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Астория">
+                <figcaption>Круиз “Астория”</figcaption>
+            </picture></figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Астория”</h3>
               <div class="card__inner">
@@ -164,15 +162,20 @@
 
           <li class="cruises__item card">
             <figure class="card__figure">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-astoria-desktop@1x.webp 1x, img/cruise-astoria-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet@1x.webp 1x, img/cruise-astoria-tablet@2x.webp 2x" type="image/webp">
+              <!-- <picture>
+                <source media="(min-width: 1024px)"
+                  srcset="img/cruise-astoria-desktop@1x.webp 1x, img/cruise-astoria-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-astoria-tablet@1x.webp 1x, img/cruise-astoria-tablet@2x.webp 2x" type="image/webp">
 
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
-                <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-astoria-desktop@1x.jpg" srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Элайн">
-              </picture>
+
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
+                <img src="img/cruise-astoria-desktop@1x.jpg" srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Элайн">
+              </picture> -->
+              <img src="img/cruise-astoria-tablet@1x.jpg" srcset="img/cruise-astoria-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Элайн">
               <figcaption>Круиз “Элайн”</figcaption>
             </figure>
             <div class="card__description">
@@ -199,15 +202,20 @@
 
           <li class="cruises__item card">
             <figure class="card__figure">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-atlantis-desktop@1x.webp 1x, img/cruise-atlantis-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-atlantis-tablet@1x.webp 1x, img/cruise-atlantis-tablet@2x.webp 2x" type="image/webp">
+              <!-- <picture>
+                <source media="(min-width: 1024px)"
+                  srcset="img/cruise-atlantis-desktop@1x.webp 1x, img/cruise-atlantis-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-atlantis-tablet@1x.webp 1x, img/cruise-atlantis-tablet@2x.webp 2x"
+                  type="image/webp">
 
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-atlantis-tablet@1x.jpg 1x, img/cruise-atlantis-tablet@2x.jpg 2x">
-                <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-atlantis-desktop@1x.jpg" srcset="img/cruise-atlantis-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Атлантис">
-              </picture>
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-atlantis-tablet@1x.jpg 1x, img/cruise-atlantis-tablet@2x.jpg 2x">
+                <img src="img/cruise-atlantis-desktop@1x.jpg" srcset="img/cruise-atlantis-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Атлантис">
+              </picture> -->
+              <img src="img/cruise-atlantis-tablet@1x.jpg" srcset="img/cruise-atlantis-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Атлантис">
               <figcaption>Круиз “Атлантис”</figcaption>
             </figure>
             <div class="card__description">
@@ -234,15 +242,20 @@
 
           <li class="cruises__item card">
             <figure class="card__figure">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-odysseus-desktop@1x.webp 1x, img/cruise-odysseus-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-odysseus-tablet@1x.webp 1x, img/cruise-odysseus-tablet@2x.webp 2x" type="image/webp">
+              <!-- <picture>
+                <source media="(min-width: 1024px)"
+                  srcset="img/cruise-odysseus-desktop@1x.webp 1x, img/cruise-odysseus-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-odysseus-tablet@1x.webp 1x, img/cruise-odysseus-tablet@2x.webp 2x"
+                  type="image/webp">
 
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-odysseus-tablet@1x.jpg 1x, img/cruise-odysseus-tablet@2x.jpg 2x">
-                <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-odysseus-desktop@1x.jpg" srcset="img/cruise-odysseus-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Одиссей">
-              </picture>
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-odysseus-tablet@1x.jpg 1x, img/cruise-odysseus-tablet@2x.jpg 2x">
+                <img src="img/cruise-odysseus-desktop@1x.jpg" srcset="img/cruise-odysseus-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Одиссей">
+              </picture> -->
+              <img src="img/cruise-odysseus-tablet@1x.jpg" srcset="img/cruise-odysseus-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Одиссей">
               <figcaption>Круиз “Одиссей”</figcaption>
             </figure>
             <div class="card__description">
@@ -269,15 +282,19 @@
 
           <li class="cruises__item card">
             <figure class="card__figure">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-olympia-desktop@1x.webp 1x, img/cruise-olympia-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-olympia-tablet@1x.webp 1x, img/cruise-olympia-tablet@2x.webp 2x" type="image/webp">
+              <!-- <picture>
+                <source media="(min-width: 1024px)"
+                  srcset="img/cruise-olympia-desktop@1x.webp 1x, img/cruise-olympia-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-olympia-tablet@1x.webp 1x, img/cruise-olympia-tablet@2x.webp 2x" type="image/webp">
 
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-olympia-tablet@1x.jpg 1x, img/cruise-olympia-tablet@2x.jpg 2x">
-                <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-olympia-desktop@1x.jpg" srcset="img/cruise-olympia-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Олимпия">
-              </picture>
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-olympia-tablet@1x.jpg 1x, img/cruise-olympia-tablet@2x.jpg 2x">
+                <img src="img/cruise-olympia-desktop@1x.jpg" srcset="img/cruise-olympia-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Олимпия">
+              </picture> -->
+              <img src="img/cruise-olympia-tablet@1x.jpg" srcset="img/cruise-olympia-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Олимпия">
               <figcaption>Круиз “Олимпия”</figcaption>
             </figure>
             <div class="card__description">
@@ -304,16 +321,19 @@
 
           <li class="cruises__item card">
             <figure class="card__figure">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-aurora-desktop@1x.webp 1x, img/cruise-aurora-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-aurora-tablet@1x.webp 1x, img/cruise-aurora-tablet@2x.webp 2x" type="image/webp">
+              <!-- <picture>
+                <source media="(min-width: 1024px)"
+                  srcset="img/cruise-aurora-desktop@1x.webp 1x, img/cruise-aurora-desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-aurora-tablet@1x.webp 1x, img/cruise-aurora-tablet@2x.webp 2x" type="image/webp">
 
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-aurora-tablet@1x.jpg 1x, img/cruise-aurora-tablet@2x.jpg 2x">
-                <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-aurora-desktop@1x.jpg" srcset="img/cruise-aurora-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Аврора">
-              </picture>
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-aurora-tablet@1x.jpg 1x, img/cruise-aurora-tablet@2x.jpg 2x">
+                <img src="img/cruise-aurora-desktop@1x.jpg" srcset="img/cruise-aurora-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Аврора">
+              </picture> -->
               <figcaption>Круиз “Аврора”</figcaption>
+              <img src="img/cruise-aurora-tablet@1x.jpg" srcset="img/cruise-aurora-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Аврора">
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Аврора”</h3>
@@ -339,15 +359,18 @@
 
           <li class="cruises__item card">
             <figure class="card__figure">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-leonor-desktop@1x.webp 1x, img/cruise-leonor-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-leonor-tablet@1x.webp 1x, img/cruise-leonor-tablet@2x.webp 2x" type="image/webp">
+              <!-- <picture>
+                <source media="(min-width: 1024px)"
+                  srcset="img/cruise-leonor-desktop@1x.webp 1x, img/cruise-leonor-desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-leonor-tablet@1x.webp 1x, img/cruise-leonor-tablet@2x.webp 2x" type="image/webp">
 
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-leonor-tablet@1x.jpg 1x, img/cruise-leonor-tablet@2x.jpg 2x">
-                <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-leonor-desktop@1x.jpg" srcset="img/cruise-leonor-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Леонор">
-              </picture>
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-leonor-tablet@1x.jpg 1x, img/cruise-leonor-tablet@2x.jpg 2x">
+                <img src="img/cruise-leonor-desktop@1x.jpg" srcset="img/cruise-leonor-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Леонор">
+              </picture> -->
+              <img src="img/cruise-leonor-tablet@1x.jpg" srcset="img/cruise-leonor-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Леонор">
               <figcaption>Круиз “Леонор”</figcaption>
             </figure>
             <div class="card__description">
@@ -374,15 +397,18 @@
 
           <li class="cruises__item card">
             <figure class="card__figure">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/cruise-minion-desktop@1x.webp 1x, img/cruise-minion-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/cruise-minion-tablet@1x.webp 1x, img/cruise-minion-tablet@2x.webp 2x" type="image/webp">
+              <!-- <picture>
+                <source media="(min-width: 1024px)"
+                  srcset="img/cruise-minion-desktop@1x.webp 1x, img/cruise-minion-desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-minion-tablet@1x.webp 1x, img/cruise-minion-tablet@2x.webp 2x" type="image/webp">
 
-                <!-- 1х: 309; 2x: 618 -->
-                <source media="(max-width: 1023px)" srcset="img/cruise-minion-tablet@1x.jpg 1x, img/cruise-minion-tablet@2x.jpg 2x">
-                <!-- 1х: 260; 2x: 520 -->
-                <img src="img/cruise-minion-desktop@1x.jpg" srcset="img/cruise-minion-desktop@2x.jpg 2x" width="260" height="386" alt="круиз Минион - 1">
-              </picture>
+                <source media="(max-width: 1023px)"
+                  srcset="img/cruise-minion-tablet@1x.jpg 1x, img/cruise-minion-tablet@2x.jpg 2x">
+                <img src="img/cruise-minion-desktop@1x.jpg" srcset="img/cruise-minion-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Минион - 1">
+              </picture> -->
+              <img src="img/cruise-minion-tablet@1x.jpg" srcset="img/cruise-minion-tablet@2x.jpg 2x" width="309" height="386" alt="круиз Минион - 1">
               <figcaption>Круиз “Минион - 1”</figcaption>
             </figure>
             <div class="card__description">

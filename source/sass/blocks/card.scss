@@ -1,7 +1,7 @@
 .card {
   position: relative;
   margin-bottom: 30px;
-  min-width: 23.008%;
+  max-width: 23.008%;
   cursor: pointer;
 
   &:hover {
@@ -18,7 +18,7 @@
   overflow: hidden;
 
   img {
-    width: 100%;
+    object-fit: cover;
   }
 
   figcaption {

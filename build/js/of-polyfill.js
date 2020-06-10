@@ -232,4 +232,3 @@ var objectFitImages = (function () {
   return fix;
 
 }());
-

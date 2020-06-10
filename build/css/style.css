@@ -724,7 +724,8 @@ svg {
           align-items: center; }
 
 .promo__inner {
-  padding-right: 65px; }
+  padding-right: 65px;
+  max-width: 50%; }
   .promo__inner h2 {
     margin: 0;
     font-size: 1.75rem;
@@ -735,16 +736,14 @@ svg {
   .promo__inner p {
     margin: 0; }
 
-.promo__title {
-  margin: 0;
-  font-size: 1.75rem;
-  line-height: 42px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-bottom: 25px; }
-
-.promo__text {
-  margin: 0; }
+.promo__img-wrap {
+  width: 48.275%;
+  min-height: 301px;
+  overflow: hidden; }
+  .promo__img-wrap img {
+    position: relative;
+    left: 50%;
+    margin-left: -280px; }
 
 .promo__linebreak {
   display: none; }
@@ -752,16 +751,16 @@ svg {
 @media (max-width: 1023px) {
   .promo {
     padding: 91px 0; }
-  .promo__container img {
-    width: 324px;
-    height: auto; }
   .promo__inner {
-    padding-right: 30px; }
+    padding-right: 15px; }
     .promo__inner h2 {
       margin-bottom: 18px;
       max-width: 70%;
       font-size: 1.625rem;
       line-height: 36px; }
+  .promo__img-wrap {
+    width: 47.787%;
+    min-height: 264px; }
   .promo__linebreak {
     display: block; } }
 
@@ -773,16 +772,24 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .promo__container img {
-      width: 290px; }
   .promo__inner {
-    padding-right: 0; }
+    padding-right: 0;
+    max-width: 100%; }
     .promo__inner h2 {
       margin-bottom: 15px;
       font-size: 1.5rem;
       line-height: 34px; }
     .promo__inner p {
       margin-bottom: 33px; }
+  .promo__img-wrap {
+    width: 100%;
+    min-height: auto; }
+    .promo__img-wrap img {
+      left: 0;
+      margin: 0;
+      min-height: none;
+      height: auto;
+      width: 100%; }
   .promo__linebreak {
     display: none; } }
 
@@ -993,7 +1000,7 @@ svg {
 .card {
   position: relative;
   margin-bottom: 30px;
-  min-width: 23.008%;
+  max-width: 23.008%;
   cursor: pointer; }
   .card:hover .card__description {
     display: -webkit-box;
@@ -1006,7 +1013,8 @@ svg {
   min-height: 386px;
   overflow: hidden; }
   .card__figure img {
-    width: 100%; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .card__figure figcaption {
     position: absolute;
     bottom: 22px;
