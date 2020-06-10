@@ -1345,8 +1345,7 @@ input[type=checkbox]:focus + label::before {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 560px;
-  overflow: hidden;
-  border: 1px solid black; }
+  overflow: hidden; }
   .contacts__map img {
     position: relative; }
   .contacts__map::before {
