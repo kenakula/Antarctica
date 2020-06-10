@@ -738,7 +738,6 @@ svg {
 
 .promo__img-wrap {
   width: 48.275%;
-  min-height: 301px;
   overflow: hidden; }
   .promo__img-wrap img {
     position: relative;
@@ -760,7 +759,10 @@ svg {
       line-height: 36px; }
   .promo__img-wrap {
     width: 47.787%;
-    min-height: 264px; }
+    height: 264px; }
+    .promo__img-wrap img {
+      -o-object-fit: cover;
+         object-fit: cover; }
   .promo__linebreak {
     display: block; } }
 
@@ -783,12 +785,12 @@ svg {
       margin-bottom: 33px; }
   .promo__img-wrap {
     width: 100%;
-    min-height: auto; }
+    height: 186px; }
     .promo__img-wrap img {
       left: 0;
       margin: 0;
       min-height: none;
-      height: auto;
+      height: 100%;
       width: 100%; }
   .promo__linebreak {
     display: none; } }
@@ -999,8 +1001,12 @@ svg {
 
 .card {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 30px;
-  max-width: 23.008%;
+  width: 260px;
+  height: 386px;
   cursor: pointer; }
   .card:hover .card__description {
     display: -webkit-box;
@@ -1010,11 +1016,9 @@ svg {
 .card__figure {
   position: relative;
   margin: 0;
+  width: 100%;
   min-height: 386px;
   overflow: hidden; }
-  .card__figure img {
-    -o-object-fit: cover;
-       object-fit: cover; }
   .card__figure figcaption {
     position: absolute;
     bottom: 22px;
@@ -1022,7 +1026,12 @@ svg {
     font-size: 1.125rem;
     line-height: 27px;
     font-weight: 500;
-    color: #f9fbfd; }
+    color: #f9fbfd;
+    z-index: 10; }
+  .card__figure img {
+    position: absolute;
+    top: 0;
+    left: -22px; }
 
 .card__description {
   position: absolute;
@@ -1037,7 +1046,8 @@ svg {
   height: 100%;
   padding: 29px 25px 35px;
   background-color: #011c40;
-  color: #f9fbfd; }
+  color: #f9fbfd;
+  z-index: 100; }
   .card__description h3 {
     margin: 0;
     margin-bottom: 11px;
@@ -1066,21 +1076,23 @@ svg {
 
 @media (max-width: 1023px) {
   .card {
-    max-width: 47.685%; }
+    width: 309px; }
   .card__figure figcaption {
     bottom: 26px;
     left: 36px; }
+  .card__figure img {
+    left: 0; }
   .card__description {
     padding: 29px 35px 35px; } }
 
 @media (max-width: 767px) {
   .card {
-    max-width: 270px; }
-  .card__figure img {
-    width: auto; }
+    width: 270px; }
   .card__figure figcaption {
     bottom: 17px;
     left: 26px; }
+  .card__figure img {
+    left: -22px; }
   .card__description {
     padding: 29px 25px 35px; } }
 
@@ -1165,7 +1177,7 @@ svg {
     width: 90.625%; }
   .booking__inner {
     margin-bottom: 34px; }
-    .booking__inner h3 {
+    .booking__inner h2 {
       margin-bottom: 14px;
       font-size: 1.5rem;
       line-height: 31px; }
@@ -1321,22 +1333,34 @@ input[type=checkbox]:focus + label::before {
           justify-content: space-between; }
 
 .contacts__map {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 560px;
+  overflow: hidden; }
+  .contacts__map img {
+    position: relative; }
   .contacts__map::before {
     content: "";
     display: block;
     position: absolute;
-    right: 293px;
+    left: 249px;
     bottom: 67px;
     width: 18px;
     height: 22px;
     background-image: url("../../img/icon-pin.svg");
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center;
+    z-index: 100; }
 
 .contacts__info {
   padding-top: 76px;
-  width: 43.103%; }
+  padding-left: 40px;
+  width: 46.5%; }
   .contacts__info > p {
     margin: 0;
     margin-bottom: 33px;
@@ -1388,14 +1412,17 @@ input[type=checkbox]:focus + label::before {
 @media (max-width: 1023px) {
   .contacts {
     padding: 100px 0; }
-  .contacts__map::before {
-    bottom: 95px;
-    right: 197px; }
-  .contacts__map img {
-    width: 324px;
-    height: 335px; }
+  .contacts__map {
+    max-width: 324px;
+    min-height: 335px; }
+    .contacts__map::before {
+      bottom: 95px;
+      left: 109px; }
+    .contacts__map img {
+      height: 100%; }
   .contacts__info {
     padding-top: 66px;
+    padding-left: 0;
     width: 48%; }
     .contacts__info > p {
       margin-bottom: 27px; }
@@ -1415,12 +1442,14 @@ input[type=checkbox]:focus + label::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .contacts__map::before {
-    bottom: 70px;
-    right: 160px; }
-  .contacts__map img {
-    width: 290px;
-    height: 316px; }
+  .contacts__map {
+    max-width: 100%;
+    min-height: 316px; }
+    .contacts__map::before {
+      left: 38.62%;
+      bottom: 70px; }
+    .contacts__map img {
+      height: 316px; }
   .contacts__info {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;

@@ -25,7 +25,6 @@
 
 .promo__img-wrap {
   width: 48.275%;
-  min-height: 301px;
   overflow: hidden;
 
   img {
@@ -57,7 +56,11 @@
 
   .promo__img-wrap {
     width: 47.787%;
-    min-height: 264px;
+    height: 264px;
+
+    img {
+      object-fit: cover;
+    }
   }
 
   .promo__linebreak {
@@ -91,13 +94,13 @@
 
   .promo__img-wrap {
     width: 100%;
-    min-height: auto;
+    height: 186px;
 
     img {
       left: 0;
       margin: 0;
       min-height: none;
-      height: auto;
+      height: 100%;
       width: 100%;
     }
   }

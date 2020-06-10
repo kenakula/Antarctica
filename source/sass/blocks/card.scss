@@ -1,7 +1,9 @@
 .card {
   position: relative;
+  display: flex;
   margin-bottom: 30px;
-  max-width: 23.008%;
+  width: 260px;
+  height: 386px;
   cursor: pointer;
 
   &:hover {
@@ -14,12 +16,9 @@
 .card__figure {
   position: relative;
   margin: 0;
+  width: 100%;
   min-height: 386px;
   overflow: hidden;
-
-  img {
-    object-fit: cover;
-  }
 
   figcaption {
     position: absolute;
@@ -29,6 +28,13 @@
     line-height: 27px;
     font-weight: 500;
     color: $white;
+    z-index: 10;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: -22px;
   }
 }
 
@@ -43,6 +49,7 @@
   padding: 29px 25px 35px;
   background-color: $main-color;
   color: $white;
+  z-index: 100;
 
   h3 {
     margin: 0;
@@ -82,13 +89,17 @@
 
 @media (max-width: $desktop) {
   .card {
-    max-width: 47.685%;
+    width: 309px;
   }
 
   .card__figure {
     figcaption {
       bottom: 26px;
       left: 36px;
+    }
+
+    img {
+      left: 0;
     }
   }
 
@@ -99,17 +110,17 @@
 
 @media (max-width: $tablet) {
   .card {
-    max-width: 270px;
+    width: 270px;
   }
 
   .card__figure {
-    img {
-      width: auto;
-    }
-
     figcaption {
       bottom: 17px;
       left: 26px;
+    }
+
+    img {
+      left: -22px;
     }
   }
 
