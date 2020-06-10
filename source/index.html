@@ -25,7 +25,7 @@
             <use xlink:href="#icon-logo"></use>
           </svg>
         </a>
-        <nav class="page-header__nav main-nav" role="navigation" aria-expanded="false" aria-controls="menu">
+        <nav class="page-header__nav main-nav" aria-expanded="false" aria-controls="menu">
           <button class="main-nav__button" type="button">
             <span class="visually-hidden">Меню</span>
           </button>
@@ -49,8 +49,8 @@
         </nav>
       </div>
       <div class="page-header__bottom">
-        <h1 class="page-header__title">Круизы<br class="page-header__line-break"> в Антарктику </h1>
-        <p class="page-header__text">Волшебный мир айсбергов и пингвинов</p>
+        <h1>Круизы<br class="page-header__line-break"> в Антарктику </h1>
+        <p>Волшебный мир айсбергов и пингвинов</p>
       </div>
     </div>
   </header>
@@ -59,8 +59,8 @@
     <section class="promo">
       <div class="promo__container container">
         <div class="promo__inner">
-          <h2 class="promo__title">Путешествие на край Земли</h2>
-          <p class="promo__text">
+          <h2>Путешествие на край Земли</h2>
+          <p>
             Это волшебное путешествие поможет вам познакомиться поближе<br class="promo__linebreak"> с удивительным
             миром Антарктики. Наш круизный лайнер отвезет вас<br class="promo__linebreak"> на край Земли, где вы сможете
             увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
@@ -76,7 +76,8 @@
 
           <source media="(max-width: 767px)" srcset="img/promo-img-mobile@1x.jpg 1x, img/promo-img-mobile@2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="img/promo-img-tablet@1x.jpg 1x, img/promo-img-tablet@2x.jpg 2x">
-          <img class="promo__img" src="img/promo-img-desktop@1x.jpg" srcset="img/promo-img-desktop@2x.jpg 2x"
+          <!-- 1x: 560px 2x: 1120px -->
+          <img src="img/promo-img-desktop@1x.jpg" srcset="img/promo-img-desktop@2x.jpg 2x" width="560" height="301"
             alt="Пингвины на снегу">
         </picture>
       </div>
@@ -84,16 +85,11 @@
     <!-- advantages -->
     <section class="advantages">
       <div class="advantages__container container">
-        <h2 class="advantages__title">Преимущества</h2>
+        <h2>Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--boat">
-            <div class="advantages__inner">
-              <svg class="advantages__icon advantages__icon--boat" width="27" height="32">
-                <use xlink:href="#icon-boat"></use>
-              </svg>
-            </div>
-            <h3 class="advantages__feature">Небольшой круизный лайнер</h3>
-            <p class="advantages__text">
+            <h3>Небольшой круизный лайнер</h3>
+            <p>
               Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума<br
                 class="advantages__linebreak advantages__linebreak--mobile"> и очередей<br
                 class="advantages__linebreak advantages__linebreak--tablet"> и даст
@@ -102,15 +98,9 @@
           </li>
 
           <li class="advantages__item advantages__item--allinclusive">
-            <div class="advantages__inner">
-              <svg class="advantages__icon advantages__icon--allinclusive" width="38" height="21">
-                <use xlink:href="#icon-allinclusive"></use>
-              </svg>
-            </div>
-            <h3 class="advantages__feature">Система<br
-                class="advantages__linebreak advantages__linebreak--tablet advantages__linebreak--mobile"> все
-              включено</h3>
-            <p class="advantages__text">
+            <h3>Система<br class="advantages__linebreak advantages__linebreak--tablet advantages__linebreak--mobile">
+              все включено</h3>
+            <p>
               Все наши круизы работают<br
                 class="advantages__linebreak advantages__linebreak--desktop advantages__linebreak--mobile"> по системе
               “Все
@@ -121,11 +111,6 @@
           </li>
 
           <li class="advantages__item advantages__item--zodiac">
-            <div class="advantages__inner">
-              <svg class="advantages__icon advantages__icon--motorboat" width="42" height="15">
-                <use xlink:href="#icon-motorboat"></use>
-              </svg>
-            </div>
             <h3 class="advantages__feature">Экскурсионные туры на Zodiac</h3>
             <p class="advantages__text">
               Экскурсионные туры<br class="advantages__linebreak advantages__linebreak--tablet"> к берегам Антарктиды
@@ -142,7 +127,7 @@
     <!-- cruises -->
     <section class="cruises">
       <div class="cruises__container container">
-        <h2 class="cruises__title">Ближайшие круизы</h2>
+        <h2>Ближайшие круизы</h2>
         <ul class="cruises__list">
           <li class="cruises__item card">
             <figure class="card__figure">
@@ -157,10 +142,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-astoria-desktop@1x.jpg"
-                  srcset="img/cruise-astoria-desktop@2x.jpg" alt="круиз Астория">
+                <img src="img/cruise-astoria-desktop@1x.jpg" srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Астория">
               </picture>
-              <figcaption class="card__caption">Круиз “Астория”</figcaption>
+              <figcaption>Круиз “Астория”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Астория”</h3>
@@ -180,7 +165,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 11500 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
 
@@ -197,10 +182,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-astoria-desktop@1x.jpg"
-                  srcset="img/cruise-astoria-desktop@2x.jpg" alt="круиз Элайн">
+                <img src="img/cruise-astoria-desktop@1x.jpg" srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Элайн">
               </picture>
-              <figcaption class="card__caption">Круиз “Элайн”</figcaption>
+              <figcaption>Круиз “Элайн”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Элайн”</h3>
@@ -220,7 +205,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 14500 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
 
@@ -238,10 +223,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-atlantis-tablet@1x.jpg 1x, img/cruise-atlantis-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-atlantis-desktop@1x.jpg"
-                  srcset="img/cruise-atlantis-desktop@2x.jpg" alt="круиз Атлантис">
+                <img src="img/cruise-atlantis-desktop@1x.jpg" srcset="img/cruise-atlantis-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Атлантис">
               </picture>
-              <figcaption class="card__caption">Круиз “Атлантис”</figcaption>
+              <figcaption>Круиз “Атлантис”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Атлантис”</h3>
@@ -261,7 +246,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 14500 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
 
@@ -279,10 +264,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-odysseus-tablet@1x.jpg 1x, img/cruise-odysseus-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-odysseus-desktop@1x.jpg"
-                  srcset="img/cruise-odysseus-desktop@2x.jpg" alt="круиз Одиссей">
+                <img src="img/cruise-odysseus-desktop@1x.jpg" srcset="img/cruise-odysseus-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Одиссей">
               </picture>
-              <figcaption class="card__caption">Круиз “Одиссей”</figcaption>
+              <figcaption>Круиз “Одиссей”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Одиссей”</h3>
@@ -302,7 +287,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 9700 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
 
@@ -319,10 +304,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-olympia-tablet@1x.jpg 1x, img/cruise-olympia-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-olympia-desktop@1x.jpg"
-                  srcset="img/cruise-olympia-desktop@2x.jpg" alt="круиз Олимпия">
+                <img src="img/cruise-olympia-desktop@1x.jpg" srcset="img/cruise-olympia-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Олимпия">
               </picture>
-              <figcaption class="card__caption">Круиз “Олимпия”</figcaption>
+              <figcaption>Круиз “Олимпия”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Олимпия”</h3>
@@ -342,7 +327,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 18600 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
 
@@ -358,10 +343,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-aurora-tablet@1x.jpg 1x, img/cruise-aurora-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-aurora-desktop@1x.jpg" srcset="img/cruise-aurora-desktop@2x.jpg"
-                  alt="круиз Аврора">
+                <img src="img/cruise-aurora-desktop@1x.jpg" srcset="img/cruise-aurora-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Аврора">
               </picture>
-              <figcaption class="card__caption">Круиз “Аврора”</figcaption>
+              <figcaption>Круиз “Аврора”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Аврора”</h3>
@@ -381,7 +366,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 11700 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
 
@@ -397,10 +382,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-leonor-tablet@1x.jpg 1x, img/cruise-leonor-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-leonor-desktop@1x.jpg" srcset="img/cruise-leonor-desktop@2x.jpg"
-                  alt="круиз Леонор">
+                <img src="img/cruise-leonor-desktop@1x.jpg" srcset="img/cruise-leonor-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Леонор">
               </picture>
-              <figcaption class="card__caption">Круиз “Леонор”</figcaption>
+              <figcaption>Круиз “Леонор”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Леонор”</h3>
@@ -420,7 +405,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 12500 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
 
@@ -436,10 +421,10 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-minion-tablet@1x.jpg 1x, img/cruise-minion-tablet@2x.jpg 2x">
                 <!-- 1х: 260; 2x: 520 -->
-                <img class="card__img" src="img/cruise-minion-desktop@1x.jpg" srcset="img/cruise-minion-desktop@2x.jpg"
-                  alt="круиз Минион - 1">
+                <img src="img/cruise-minion-desktop@1x.jpg" srcset="img/cruise-minion-desktop@2x.jpg 2x" width="260"
+                  height="386" alt="круиз Минион - 1">
               </picture>
-              <figcaption class="card__caption">Круиз “Минион - 1”</figcaption>
+              <figcaption>Круиз “Минион - 1”</figcaption>
             </figure>
             <div class="card__description">
               <h3 class="card__title">Круиз “Минион - 1”</h3>
@@ -459,7 +444,7 @@
                 <b class="card__subtitle">Цена</b>
                 <p class="card__text">от 12300 $</p>
               </div>
-              <button class="card__button button">Забронировать</button>
+              <button class="card__button button" type="button">Забронировать</button>
             </div>
           </li>
         </ul>
@@ -478,21 +463,21 @@
             <p class="form__text">Оставьте заявку<br class="booking__linebreak booking__linebreak--mobile"> и мы
               свяжемся с вами в ближайшее время</p>
             <div class="form__inner">
-              <label class="visually-hidden" for="name">Ваше имя</label>
               <input class="form__input form__input--text" type="text" id="name" placeholder="Валерия">
+              <label class="visually-hidden" for="name">Ваше имя</label>
 
-              <label class="visually-hidden" for="tel">Номер телефона</label>
               <input class="form__input form__input--text" type="tel" id="tel" placeholder="89236889975">
+              <label class="visually-hidden" for="tel">Номер телефона</label>
 
-              <label class="visually-hidden" for="email">Ваше имя</label>
               <input class="form__input form__input--text" type="email" id="email"
                 placeholder="grishaewa.lera@gmail.com">
+              <label class="visually-hidden" for="email">Ваше имя</label>
             </div>
 
             <div class="form__inner form__inner--checkbox">
+              <input class="visually-hidden" type="checkbox" id="consent">
               <label class="form__label form__label--checkbox" for="consent">Я согласен на обработку моих персональных
                 данных</label>
-              <input class="visually-hidden" type="checkbox" id="consent">
             </div>
 
             <button class="button form__button" type="submit">Оставить заявку</button>
@@ -500,7 +485,9 @@
         </div>
       </div>
     </section>
+    <!-- contacts -->
     <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts__container container">
         <div class="contacts__map">
           <picture>
@@ -512,8 +499,9 @@
 
             <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
             <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-            <img class="contacts__map-img" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560"
-              height="306" alt="Карта города с нашей локацией">
+            <!-- 1x: 306px 2x: 612px -->
+            <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306"
+              alt="Карта города с нашей локацией">
           </picture>
         </div>
         <div class="contacts__info">

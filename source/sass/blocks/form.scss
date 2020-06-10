@@ -31,6 +31,7 @@
   padding-left: 23px;
   font-size: rem(10);
   line-height: 13px;
+  cursor: pointer;
 
   &::before {
     @include pseudo;
@@ -53,6 +54,10 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .form__input {
@@ -62,8 +67,9 @@
   height: 43px;
   border: none;
   background-color: $white;
+  cursor: pointer;
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
   }
 
@@ -74,11 +80,29 @@
       color: $main-color;
     }
   }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $main-color, 0 0 0 3px $white;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+input[type=checkbox]:focus + label::before {
+  box-shadow: 0 0 0 2px $main-color, 0 0 0 3px $white;
 }
 
 .form__button {
   padding: 10px 20px 12px;
   width: 100%;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $main-color, 0 0 0 3px $white;
+  }
 }
 
 @media (max-width: $desktop) {

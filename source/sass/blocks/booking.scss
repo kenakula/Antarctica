@@ -20,22 +20,22 @@
 
 .booking__inner {
   padding-top: 163px;
-}
 
-.booking__title {
-  margin: 0;
-  margin-bottom: 9px;
-  font-size: rem(40);
-  line-height: 60px;
-  letter-spacing: 0.85px;
-  font-weight: 700;
-}
+  h2 {
+    margin: 0;
+    margin-bottom: 9px;
+    font-size: rem(40);
+    line-height: 60px;
+    letter-spacing: 0.85px;
+    font-weight: 700;
+  }
 
-.booking__text {
-  margin: 0;
-  width: 74%;
-  font-size: rem(18);
-  line-height: 27px;
+  p {
+    margin: 0;
+    width: 74%;
+    font-size: rem(18);
+    line-height: 27px;
+  }
 }
 
 .booking__linebreak {
@@ -65,16 +65,16 @@
     margin-bottom: 51px;
     padding-top: 0;
     text-align: center;
-  }
 
-  .booking__title {
-    margin-bottom: 6px;
-    font-size: rem(34);
-    line-height: 51px;
-  }
+    h2 {
+      margin-bottom: 6px;
+      font-size: rem(34);
+      line-height: 51px;
+    }
 
-  .booking__text {
-    width: 100%;
+    p {
+      width: 100%;
+    }
   }
 }
 
@@ -88,22 +88,22 @@
     width: 90.625%;
   }
 
-  .booking__title {
-    margin-bottom: 14px;
-    font-size: rem(24);
-    line-height: 31px;
-  }
-
   .booking__inner {
     margin-bottom: 34px;
-  }
 
-  .booking__text {
-    @include push-auto;
+    h3 {
+      margin-bottom: 14px;
+      font-size: rem(24);
+      line-height: 31px;
+    }
 
-    width: 90%;
-    font-size: rem(16);
-    line-height: 22px;
+    p {
+      @include push-auto;
+
+      width: 90%;
+      font-size: rem(16);
+      line-height: 22px;
+    }
   }
 
   .booking__linebreak {

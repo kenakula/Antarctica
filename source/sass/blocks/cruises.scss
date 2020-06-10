@@ -1,18 +1,16 @@
 .cruises {
   padding: 110px 0 90px;
+
+  h2 {
+    @include title;
+
+    margin-bottom: 49px;
+    text-align: center;
+  }
 }
 
 .cruises__container {
   width: 82.723%;
-}
-
-//TODO title в отдельный блок
-
-.cruises__title {
-  @include title;
-
-  margin-bottom: 49px;
-  text-align: center;
 }
 
 .cruises__list {
@@ -26,32 +24,32 @@
 @media (max-width: $desktop) {
   .cruises {
     padding: 90px 0 70px;
+
+    h2 {
+      font-size: rem(26);
+      line-height: 39px;
+    }
   }
 
   .cruises__container {
     width: 84.375%;
-  }
-
-  .cruises__title {
-    font-size: rem(26);
-    line-height: 39px;
   }
 }
 
 @media (max-width: $tablet) {
   .cruises {
     padding: 57px 0 35px;
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: rem(24);
+      line-height: 36px;
+    }
   }
 
   .cruises__list {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .cruises__title {
-    margin-bottom: 30px;
-    font-size: rem(24);
-    line-height: 36px;
   }
 }

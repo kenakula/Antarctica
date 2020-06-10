@@ -1,5 +1,5 @@
 .promo {
-  padding: 120px 0;
+  padding: 120px 0 121px;
 }
 
 .promo__container {
@@ -9,7 +9,18 @@
 }
 
 .promo__inner {
-  max-width: 44.827%;
+  padding-right: 65px;
+  // max-width: 44.827%;
+
+  h2 {
+    @include title;
+
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 .promo__title {
@@ -31,15 +42,20 @@
     padding: 91px 0;
   }
 
-  .promo__inner {
-    max-width: 47.787%;
+  .promo__container img {
+    width: 324px;
+    height: auto;
   }
 
-  .promo__title {
-    margin-bottom: 18px;
-    max-width: 70%;
-    font-size: rem(26);
-    line-height: 36px;
+  .promo__inner {
+    padding-right: 30px;
+
+    h2 {
+      margin-bottom: 18px;
+      max-width: 70%;
+      font-size: rem(26);
+      line-height: 36px;
+    }
   }
 
   .promo__linebreak {
@@ -54,20 +70,25 @@
 
   .promo__container {
     flex-direction: column;
+
+    img {
+      width: 290px;
+    }
   }
 
   .promo__inner {
-    min-width: 100%;
-  }
+    padding-right: 0;
+    // min-width: 100%;
 
-  .promo__title {
-    margin-bottom: 15px;
-    font-size: rem(24);
-    line-height: 34px;
-  }
+    h2 {
+      margin-bottom: 15px;
+      font-size: rem(24);
+      line-height: 34px;
+    }
 
-  .promo__text {
-    margin-bottom: 33px;
+    p {
+      margin-bottom: 33px;
+    }
   }
 
   .promo__linebreak {

@@ -9,13 +9,13 @@
   @media (min-resolution: $retina) {
     background-image: url("../../img/advantages-bg-desktop@2x.jpg");
   }
-}
 
-.advantages__title {
-  @include title;
+  h2 {
+    @include title;
 
-  margin-bottom: 49px;
-  text-align: center;
+    margin-bottom: 48px;
+    text-align: center;
+  }
 }
 
 .advantages__list {
@@ -26,36 +26,56 @@
 }
 
 .advantages__item {
-  padding: 30px 30px 24px;
+  position: relative;
+  padding: 81px 30px 24px;
   max-width: 31.034%;
   background-color: $white;
+
+  &::before {
+    @include pseudo;
+
+    top: 30px;
+    left: 30px;
+    width: 27px;
+    height: 32px;
+    background-image: url("../../img/icon-boat.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--allinclusive::before {
+    top: 35px;
+    width: 38px;
+    height: 21px;
+    background-image: url("../../img/icon-allinclusive.svg");
+  }
 
   &--zodiac {
     .advantages__text {
       width: 80%;
     }
+
+    &::before {
+      top: 38px;
+      width: 42px;
+      height: 15px;
+      background-image: url("../../img/icon-motorboat.svg");
+    }
   }
-}
 
-.advantages__inner {
-  margin-bottom: 19px;
-  min-height: 32px;
-  display: flex;
-  align-items: center;
-}
+  h3 {
+    margin: 0;
+    margin-bottom: 9px;
+    font-size: rem(18);
+    line-height: 27px;
+    font-weight: 500;
+  }
 
-.advantages__feature {
-  margin: 0;
-  margin-bottom: 9px;
-  font-size: rem(18);
-  line-height: 27px;
-  font-weight: 500;
-}
-
-.advantages__text {
-  margin: 0;
-  font-size: rem(14);
-  line-height: 20px;
+  p {
+    margin: 0;
+    font-size: rem(14);
+    line-height: 20px;
+  }
 }
 
 .advantages__linebreak {
@@ -69,16 +89,24 @@
 @media (max-width: $desktop) {
   .advantages {
     padding: 90px 0 100px;
-  }
 
-  .advantages__title {
-    font-size: rem(26);
-    line-height: 39px;
+    h2 {
+      margin-bottom: 49px;
+      font-size: rem(26);
+      line-height: 39px;
+    }
   }
 
   .advantages__item {
-    padding: 25px 15px 21px 20px;
+    padding: 70px 15px 20px 20px;
     max-width: 30.383%;
+
+    &::before {
+      top: 26px;
+      left: 20px;
+      width: 21px;
+      height: 26px;
+    }
 
     &--boat {
       .advantages__text {
@@ -86,10 +114,26 @@
       }
     }
 
+    &--allinclusive::before {
+      top: 30px;
+      width: 33px;
+      height: 19px;
+    }
+
     &--zodiac {
       .advantages__text {
         width: 98%;
       }
+
+      &::before {
+        top: 32px;
+        width: 38px;
+        height: 13px;
+      }
+    }
+
+    h3 {
+      margin-bottom: 6px;
     }
   }
 
@@ -114,10 +158,6 @@
     }
   }
 
-  .advantages__feature {
-    line-height: 25px;
-  }
-
   .advantages__linebreak {
     display: none;
 
@@ -130,12 +170,12 @@
 @media (max-width: $tablet) {
   .advantages {
     padding: 57px 0 64px;
-  }
 
-  .advantages__title {
-    margin-bottom: 30px;
-    font-size: rem(24);
-    line-height: 36px;
+    h2 {
+      margin-bottom: 30px;
+      font-size: rem(24);
+      line-height: 36px;
+    }
   }
 
   .advantages__list {
@@ -167,10 +207,10 @@
         width: 100%;
       }
     }
-  }
 
-  .advantages__feature {
-    width: 75%;
+    h3 {
+      width: 75%;
+    }
   }
 
   .advantages__linebreak {

@@ -20,8 +20,13 @@
   align-items: center;
   transition: all $trans-speed $trans-curve;
 
+  &:focus,
   &:hover {
     opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
