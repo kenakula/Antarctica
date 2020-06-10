@@ -7,15 +7,15 @@
   height: 100%;
   background-color: $main-color;
   color: $white;
-}
 
-.form__text {
-  margin: 0;
-  margin-bottom: 27px;
-  font-size: rem(18);
-  line-height: 27px;
-  font-weight: 500;
-  letter-spacing: 0.2px;
+  > p {
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: rem(18);
+    line-height: 27px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  }
 }
 
 .form__inner {
@@ -26,7 +26,7 @@
   }
 }
 
-.form__label {
+label[for=consent] {
   position: relative;
   padding-left: 23px;
   font-size: rem(10);
@@ -60,7 +60,7 @@
   }
 }
 
-.form__input {
+input {
   margin-bottom: 20px;
   padding: 0 16px;
   width: 100%;
@@ -73,7 +73,9 @@
     margin-bottom: 0;
   }
 
-  &--text {
+  &[type=text],
+  &[type=email],
+  &[type=tel] {
     @include placeholder {
       font-size: rem(14);
       line-height: 21px;
@@ -95,7 +97,7 @@ input[type=checkbox]:focus + label::before {
   box-shadow: 0 0 0 2px $main-color, 0 0 0 3px $white;
 }
 
-.form__button {
+button[type=submit] {
   padding: 10px 20px 12px;
   width: 100%;
 
@@ -122,13 +124,13 @@ input[type=checkbox]:focus + label::before {
 
   .form__form {
     padding: 35px 30px 40px;
-  }
 
-  .form__text {
-    margin-bottom: 28px;
-    font-size: rem(18);
-    line-height: 25px;
-    text-align: center;
+    > p {
+      margin-bottom: 28px;
+      font-size: rem(18);
+      line-height: 25px;
+      text-align: center;
+    }
   }
 
   .form__inner {
@@ -139,7 +141,7 @@ input[type=checkbox]:focus + label::before {
     }
   }
 
-  .form__label {
+  label[for=consent] {
     display: block;
     padding-left: 28px;
     width: 80%;

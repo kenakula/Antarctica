@@ -1204,27 +1204,26 @@ svg {
   height: 100%;
   background-color: #011c40;
   color: #f9fbfd; }
-
-.form__text {
-  margin: 0;
-  margin-bottom: 27px;
-  font-size: 1.125rem;
-  line-height: 27px;
-  font-weight: 500;
-  letter-spacing: 0.2px; }
+  .form__form > p {
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 1.125rem;
+    line-height: 27px;
+    font-weight: 500;
+    letter-spacing: 0.2px; }
 
 .form__inner {
   margin-bottom: 17px; }
   .form__inner--checkbox {
     margin-bottom: 27px; }
 
-.form__label {
+label[for=consent] {
   position: relative;
   padding-left: 23px;
   font-size: 0.625rem;
   line-height: 13px;
   cursor: pointer; }
-  .form__label::before {
+  label[for=consent]::before {
     content: "";
     display: block;
     position: absolute;
@@ -1233,7 +1232,7 @@ svg {
     width: 18px;
     height: 18px;
     background-color: #f9fbfd; }
-  .form__label::after {
+  label[for=consent]::after {
     content: "";
     display: block;
     position: absolute;
@@ -1244,10 +1243,10 @@ svg {
     background-image: url("../../img/icon-tick.svg");
     background-position: center center;
     background-repeat: no-repeat; }
-  .form__label:hover {
+  label[for=consent]:hover {
     opacity: 0.7; }
 
-.form__input {
+input {
   margin-bottom: 20px;
   padding: 0 16px;
   width: 100%;
@@ -1255,39 +1254,39 @@ svg {
   border: none;
   background-color: #f9fbfd;
   cursor: pointer; }
-  .form__input:last-of-type {
+  input:last-of-type {
     margin-bottom: 0; }
-  .form__input--text::-webkit-input-placeholder {
+  input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder {
     font-size: 0.875rem;
     line-height: 21px;
     color: #011c40; }
-  .form__input--text:-moz-placeholder {
+  input[type=text]:-moz-placeholder, input[type=email]:-moz-placeholder, input[type=tel]:-moz-placeholder {
     font-size: 0.875rem;
     line-height: 21px;
     color: #011c40; }
-  .form__input--text::-moz-placeholder {
+  input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder {
     font-size: 0.875rem;
     line-height: 21px;
     color: #011c40; }
-  .form__input--text:-ms-input-placeholder {
+  input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder {
     font-size: 0.875rem;
     line-height: 21px;
     color: #011c40; }
-  .form__input:focus {
+  input:focus {
     outline: none;
     -webkit-box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #f9fbfd;
             box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #f9fbfd; }
-  .form__input:hover {
+  input:hover {
     opacity: 0.8; }
 
 input[type=checkbox]:focus + label::before {
   -webkit-box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #f9fbfd;
           box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #f9fbfd; }
 
-.form__button {
+button[type=submit] {
   padding: 10px 20px 12px;
   width: 100%; }
-  .form__button:focus {
+  button[type=submit]:focus {
     outline: none;
     -webkit-box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #f9fbfd;
             box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #f9fbfd; }
@@ -1303,25 +1302,25 @@ input[type=checkbox]:focus + label::before {
     max-width: 100%; }
   .form__form {
     padding: 35px 30px 40px; }
-  .form__text {
-    margin-bottom: 28px;
-    font-size: 1.125rem;
-    line-height: 25px;
-    text-align: center; }
+    .form__form > p {
+      margin-bottom: 28px;
+      font-size: 1.125rem;
+      line-height: 25px;
+      text-align: center; }
   .form__inner {
     margin-bottom: 19px; }
     .form__inner--checkbox {
       margin-bottom: 27px; }
-  .form__label {
+  label[for=consent] {
     display: block;
     padding-left: 28px;
     width: 80%;
     line-height: 12px; }
-    .form__label::before {
+    label[for=consent]::before {
       top: 1px;
       width: 20px;
       height: 20px; }
-    .form__label::after {
+    label[for=consent]::after {
       top: 8px;
       left: 5px; } }
 
