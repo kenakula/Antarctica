@@ -23,16 +23,16 @@
     if (button) {
       button.addEventListener('focus', function () {
         window.vendor.toggleDescription(it);
-      })
+      });
       button.addEventListener('blur', function () {
         window.vendor.toggleDescription(it);
-      })
+      });
     }
-  })
+  });
 
   telInput.addEventListener('input', function () {
     window.vendor.validateTelInput(telInput);
-  })
+  });
 
   menuToggler.addEventListener('click', onTogglerClickMenuToggle);
 })();

@@ -16,10 +16,11 @@
 }
 
 .socials__link {
+  @include transition;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all $trans-speed $trans-curve;
 
   &:focus,
   &:hover {

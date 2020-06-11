@@ -25,12 +25,13 @@
 }
 
 .main-nav__link {
+  @include transition;
+
   line-height: 20px;
   font-weight: 500;
   letter-spacing: 0.1px;
   color: $white;
   text-decoration: none;
-  transition: all $trans-speed $trans-curve;
 
   &:focus,
   &:hover {
@@ -80,14 +81,14 @@
     height: 14px;
     background-image: url("../img/burger-menu.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     cursor: pointer;
     z-index: 100;
 
     &--close {
       width: 14px;
       height: 14px;
-      background-image: url("../img/icon-cross.svg");
+      background-image: url("../img/cross.svg");
     }
   }
 

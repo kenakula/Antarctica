@@ -46,6 +46,8 @@
 }
 
 .card__description {
+  @include transition;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +60,6 @@
   color: $white;
   opacity: 0;
   z-index: 100;
-  transition: opacity $trans-speed $trans-curve;
 
   h3 {
     margin: 0;
@@ -97,7 +98,7 @@
 }
 
 @media (min-width: 1550px) {
-  // для отображения 4 карточки в ряду на больших экранах
+  // для отображения 4х карточек в ряд на больших экранах
 
   .card {
     width: 23.008%;

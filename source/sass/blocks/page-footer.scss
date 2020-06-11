@@ -39,11 +39,12 @@
 }
 
 .page-footer__link {
+  @include transition;
+
   line-height: 20px;
   font-weight: 500;
   color: $white;
   text-decoration: none;
-  transition: all $trans-speed $trans-curve;
 
   &:focus,
   &:hover {

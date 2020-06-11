@@ -72,10 +72,6 @@
     background-position: center center;
   }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &--address {
     &::before {
       background-image: url("../img/icon-pin.svg");
@@ -87,6 +83,10 @@
       height: 18px;
       background-image: url("../img/icon-phone.svg");
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

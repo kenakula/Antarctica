@@ -4,13 +4,15 @@ $font-main: "Montserrat", "Arial", sans-serif;
 $white: #f9fbfd;
 $main-color: #011c40;
 $grey: #d8d8d9;
+$header-bg: #87a7d4;
+$advantages-bg: #e3ecf6;
+$booking-bg: #c5dbf5;
 //widths
 $mobile: 320px;
-$pre-tablet: 820px;
 $tablet: 767px;
 $desktop: 1023px;
 //resolution
 $retina: 1.5dppx;
 //transition
 $trans-speed: 0.2s;
-$trans-curve: ease;
+$trans-curve: ease-in;

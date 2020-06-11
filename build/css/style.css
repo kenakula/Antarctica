@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -276,12 +282,6 @@ template {
 [hidden] {
   display: none; }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff");
-  font-weight: 400;
-  font-display: swap; }
-
 html {
   height: 100%;
   -webkit-box-sizing: border-box;
@@ -496,13 +496,13 @@ svg {
     margin-right: 0; }
 
 .main-nav__link {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   line-height: 20px;
   font-weight: 500;
   letter-spacing: 0.1px;
   color: #f9fbfd;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  text-decoration: none; }
   .main-nav__link:focus, .main-nav__link:hover {
     opacity: 0.7; }
   .main-nav__link:active {
@@ -537,13 +537,13 @@ svg {
     height: 14px;
     background-image: url("../img/burger-menu.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     cursor: pointer;
     z-index: 100; }
     .main-nav__button--close {
       width: 14px;
       height: 14px;
-      background-image: url("../img/icon-cross.svg"); }
+      background-image: url("../img/cross.svg"); }
   .main-nav__list {
     margin-left: calc(-100vw / 2 + 100% / 2);
     margin-right: calc(-100vw / 2 + 100% / 2);
@@ -622,12 +622,12 @@ svg {
     margin-right: 0; }
 
 .page-footer__link {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   line-height: 20px;
   font-weight: 500;
   color: #f9fbfd;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  text-decoration: none; }
   .page-footer__link:focus, .page-footer__link:hover {
     opacity: 0.7; }
   .page-footer__link:active {
@@ -694,6 +694,8 @@ svg {
     margin-right: 0; }
 
 .socials__link {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,9 +704,7 @@ svg {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+          align-items: center; }
   .socials__link:focus, .socials__link:hover {
     opacity: 0.7; }
   .socials__link:active {
@@ -857,21 +857,21 @@ svg {
     left: 30px;
     width: 27px;
     height: 32px;
-    background-image: url("../img/icon-boat.svg");
+    background-image: url("../img/boat.svg");
     background-repeat: no-repeat;
     background-position: center center; }
   .advantages__item--allinclusive::before {
     top: 35px;
     width: 38px;
     height: 21px;
-    background-image: url("../img/icon-allinclusive.svg"); }
+    background-image: url("../img/allinclusive.svg"); }
   .advantages__item--zodiac .advantages__text {
     width: 80%; }
   .advantages__item--zodiac::before {
     top: 38px;
     width: 42px;
     height: 15px;
-    background-image: url("../img/icon-motorboat.svg"); }
+    background-image: url("../img/motorboat.svg"); }
   .advantages__item h3 {
     margin: 0;
     margin-bottom: 9px;
@@ -1053,6 +1053,8 @@ svg {
     left: -22px; }
 
 .card__description {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   position: absolute;
   top: 0;
   left: 0;
@@ -1069,9 +1071,7 @@ svg {
   background-color: #011c40;
   color: #f9fbfd;
   opacity: 0;
-  z-index: 100;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease; }
+  z-index: 100; }
   .card__description h3 {
     margin: 0;
     margin-bottom: 11px;
@@ -1134,9 +1134,10 @@ svg {
   display: flex;
   padding: 50px 0;
   min-height: 555px;
+  background-color: #c5dbf5;
   background-image: url("../img/booking-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
     .booking {
@@ -1425,13 +1426,13 @@ button[type="submit"] {
     height: 22px;
     background-repeat: no-repeat;
     background-position: center center; }
-  .contacts__item:last-child {
-    margin-bottom: 0; }
   .contacts__item--address::before {
     background-image: url("../img/icon-pin.svg"); }
   .contacts__item--phone::before {
     height: 18px;
     background-image: url("../img/icon-phone.svg"); }
+  .contacts__item:last-child {
+    margin-bottom: 0; }
 
 .contacts__link {
   color: #011c40;
