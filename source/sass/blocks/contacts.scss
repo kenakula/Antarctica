@@ -25,7 +25,7 @@
     bottom: 67px;
     width: 18px;
     height: 22px;
-    background-image: url("../../img/icon-pin.svg");
+    background-image: url("../img/icon-pin.svg");
     background-repeat: no-repeat;
     background-position: center;
     z-index: 100;
@@ -78,14 +78,14 @@
 
   &--address {
     &::before {
-      background-image: url("../../img/icon-pin.svg");
+      background-image: url("../img/icon-pin.svg");
     }
   }
 
   &--phone {
     &::before {
       height: 18px;
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
     }
   }
 }

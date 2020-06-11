@@ -2,13 +2,13 @@
   display: flex;
   padding: 50px 0;
   min-height: 555px;
-  background-image: url("../../img/booking-bg-desktop@1x.jpg");
+  background-image: url("../img/booking-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @media (min-resolution: $retina) {
-    background-image: url("../../img/booking-bg-desktop@2x.jpg");
+    background-image: url("../img/booking-bg-desktop@2x.jpg");
   }
 }
 
@@ -50,10 +50,10 @@
 @media (max-width: $desktop) {
   .booking {
     padding: 88px 0 100px;
-    background-image: url("../../img/booking-bg-tablet@1x.jpg");
+    background-image: url("../img/booking-bg-tablet@1x.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/booking-bg-tablet@2x.jpg");
+      background-image: url("../img/booking-bg-tablet@2x.jpg");
     }
   }
 
