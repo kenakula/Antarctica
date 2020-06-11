@@ -2,6 +2,7 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 .socials__item {

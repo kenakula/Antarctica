@@ -9,7 +9,12 @@
   background-color: $white;
   cursor: pointer;
 
+  &:focus,
   &:hover {
     color: rgba($color: $main-color, $alpha: 0.8);
+  }
+
+  &:active {
+    color: rgba($color: $main-color, $alpha: 0.6);
   }
 }

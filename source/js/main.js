@@ -2,41 +2,37 @@
 
 (function () {
   var menuToggler = document.querySelector('.main-nav__button');
-  var pageLogo = document.querySelector('.page-header__logo');
-  var menuToggler = document.querySelector('.main-nav__button');
-  var menuList = document.querySelector('.main-nav__list');
-
-  var activateJs = function () {
-    document.body.classList.remove('no-js');
-    pageLogo.classList.remove('page-header__logo--dark');
-    menuList.classList.remove('main-nav__list--expanded');
-  };
-
-  var openMenu = function () {
-    menuToggler.classList.add('main-nav__button--close');
-    pageLogo.classList.add('page-header__logo--dark');
-    menuList.classList.add('main-nav__list--expanded');
-  };
-
-  var closeMenu = function () {
-    menuToggler.classList.remove('main-nav__button--close');
-    pageLogo.classList.remove('page-header__logo--dark');
-    menuList.classList.remove('main-nav__list--expanded');
-  };
+  var form = document.querySelector('.form__form');
+  var telInput = form.querySelector('input[type="tel"]');
+  var cards = document.querySelectorAll('.card');
 
   if (document.body.classList.contains('no-js')) {
-    activateJs();
+    window.vendor.activateJs();
   }
 
   var onTogglerClickMenuToggle = function () {
     if (!menuToggler.classList.contains('main-nav__button--close')) {
-      openMenu();
+      window.vendor.openMenu();
     } else {
-      closeMenu();
+      window.vendor.closeMenu();
     }
   };
 
-  menuToggler.addEventListener('click', onTogglerClickMenuToggle);
+  cards.forEach(function (it) {
+    var button = it.querySelector('.card__button');
+    if (button) {
+      button.addEventListener('focus', function () {
+        window.vendor.toggleDescription(it);
+      })
+      button.addEventListener('blur', function () {
+        window.vendor.toggleDescription(it);
+      })
+    }
+  })
 
-  objectFitImages();
+  telInput.addEventListener('input', function () {
+    window.vendor.validateTelInput(telInput);
+  })
+
+  menuToggler.addEventListener('click', onTogglerClickMenuToggle);
 })();

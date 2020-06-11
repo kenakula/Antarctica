@@ -62,7 +62,7 @@
 
     img {
       left: -40px;
-      top: 0px;
+      top: 0;
       width: 406px;
       height: 265px;
     }
@@ -114,45 +114,3 @@
     display: none;
   }
 }
-
-// @media (max-width: $tablet) {
-//   .promo {
-//     padding: 57px 0 65px;
-//   }
-
-//   .promo__container {
-//     flex-direction: column;
-//   }
-
-//   .promo__inner {
-//     padding-right: 0;
-//     max-width: 100%;
-
-//     h2 {
-//       margin-bottom: 15px;
-//       font-size: rem(24);
-//       line-height: 34px;
-//     }
-
-//     p {
-//       margin-bottom: 33px;
-//     }
-//   }
-
-//   .promo__img-wrap {
-//     width: 100%;
-//     height: 186px;
-
-//     img {
-//       left: 0;
-//       margin: 0;
-//       min-height: none;
-//       height: 100%;
-//       width: 100%;
-//     }
-//   }
-
-//   .promo__linebreak {
-//     display: none;
-//   }
-// }

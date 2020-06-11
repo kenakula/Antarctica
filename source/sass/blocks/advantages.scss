@@ -1,5 +1,5 @@
 .advantages {
-  padding: 110px 0 120px;
+  padding: 110px 0 100px;
   background-color: #e3ecf6;
   background-image: url("../../img/advantages-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
@@ -22,6 +22,7 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -29,6 +30,7 @@
   position: relative;
   padding: 81px 30px 24px;
   max-width: 31.034%;
+  margin-bottom: 20px;
   background-color: $white;
 
   &::before {
@@ -88,7 +90,7 @@
 
 @media (max-width: $desktop) {
   .advantages {
-    padding: 90px 0 100px;
+    padding: 90px 0 80px;
 
     h2 {
       margin-bottom: 49px;
@@ -109,7 +111,7 @@
     }
 
     &--boat {
-      .advantages__text {
+      p {
         width: 95%;
       }
     }
@@ -191,19 +193,19 @@
     }
 
     &--boat {
-      .advantages__text {
+      p {
         width: 100%;
       }
     }
 
     &--allinclusive {
-      .advantages__text {
+      p {
         width: 90%;
       }
     }
 
     &--zodiac {
-      .advantages__text {
+      p {
         width: 100%;
       }
     }
