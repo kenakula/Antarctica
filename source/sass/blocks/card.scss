@@ -47,7 +47,8 @@
     width: 100%;
     max-width: 100%;
     object-fit: cover;
-    font-family: 'object-fit: cover;'; // для полифилла
+    // для полифилла
+    font-family: "object-fit: cover;"; /* stylelint-disable-line */
   }
 }
 
