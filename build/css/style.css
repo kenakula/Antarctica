@@ -1032,7 +1032,7 @@ svg {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-  min-width: 260px;
+  width: 23.008%;
   min-height: 386px;
   cursor: pointer; }
   .card:focus .card__description, .card:hover .card__description {
@@ -1049,16 +1049,18 @@ svg {
   .card__figure figcaption {
     position: absolute;
     bottom: 22px;
-    left: 31px;
+    left: 11.923%;
     font-size: 1.125rem;
     line-height: 27px;
     font-weight: 500;
     color: #f9fbfd;
+    white-space: nowrap;
     z-index: 10; }
   .card__figure img {
-    position: absolute;
-    top: 0;
-    left: -22px; }
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .card__description {
   -webkit-transition: all 0.2s ease-in;
@@ -1106,28 +1108,18 @@ svg {
   margin-top: auto;
   width: 100%; }
 
-@media (min-width: 1550px) {
-  .card {
-    width: 23.008%; }
-    .card img {
-      position: static;
-      width: 100%;
-      height: auto; } }
-
 @media (max-width: 1023px) {
   .card {
-    width: 309px; }
+    width: 47.685%; }
   .card__figure figcaption {
     bottom: 26px;
     left: 36px; }
-  .card__figure img {
-    left: 0; }
   .card__description {
     padding: 29px 35px 35px; } }
 
 @media (max-width: 767px) {
   .card {
-    width: 270px; }
+    width: 100%; }
   .card__figure figcaption {
     bottom: 17px;
     left: 26px; }

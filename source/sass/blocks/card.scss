@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   margin-bottom: 30px;
-  min-width: 260px;
+  width: 23.008%;
   min-height: 386px;
   cursor: pointer;
 
@@ -30,18 +30,19 @@
   figcaption {
     position: absolute;
     bottom: 22px;
-    left: 31px;
+    left: 11.923%;
     font-size: rem(18);
     line-height: 27px;
     font-weight: 500;
     color: $white;
+    white-space: nowrap;
     z-index: 10;
   }
 
   img {
-    position: absolute;
-    top: 0;
-    left: -22px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -97,33 +98,15 @@
   width: 100%;
 }
 
-@media (min-width: 1550px) {
-  // для отображения 4х карточек в ряд на больших экранах
-
-  .card {
-    width: 23.008%;
-
-    img {
-      position: static;
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
 @media (max-width: $desktop) {
   .card {
-    width: 309px;
+    width: 47.685%;
   }
 
   .card__figure {
     figcaption {
       bottom: 26px;
       left: 36px;
-    }
-
-    img {
-      left: 0;
     }
   }
 
@@ -134,7 +117,7 @@
 
 @media (max-width: $tablet) {
   .card {
-    width: 270px;
+    width: 100%;
   }
 
   .card__figure {
