@@ -236,6 +236,8 @@ var objectFitImages = (function () {
 
 }());
 
+objectFitImages();
+
 // end of object-fit polyfill
 // -------
 // Full polyfill for browsers with no classList support
@@ -518,7 +520,15 @@ var objectFitImages = (function () {
     input.value = value.replace(/[^\d]/g, '');
   };
 
-  var toggleDescription = function (el) {
+  var onTogglerClickMenuToggle = function () {
+    if (!menuToggler.classList.contains('main-nav__button--close')) {
+      window.vendor.openMenu();
+    } else {
+      window.vendor.closeMenu();
+    }
+  };
+
+  var toggleCardDescription = function (el) {
     if (el.classList.contains('card--focused')) {
       el.classList.remove('card--focused');
     } else {
@@ -526,11 +536,26 @@ var objectFitImages = (function () {
     }
   };
 
+  var onCardButtonFocusBlurCardToggle = function (card) {
+    var button = card.querySelector('.card__button');
+
+    if (button) {
+      button.addEventListener('focus', function () {
+        toggleCardDescription(card);
+      });
+      button.addEventListener('blur', function () {
+        toggleCardDescription(card);
+      });
+    }
+  }
+
   window.vendor = {
     activateJs: activateJs,
     openMenu: openMenu,
     closeMenu: closeMenu,
+    onTogglerClickMenuToggle: onTogglerClickMenuToggle,
     validateTelInput: validateTelInput,
-    toggleDescription: toggleDescription,
+    toggleCardDescription: toggleCardDescription,
+    onCardButtonFocusBlurCardToggle: onCardButtonFocusBlurCardToggle,
   };
 })();

@@ -1034,6 +1034,8 @@ img {
   cursor: pointer; }
   .card:focus .card__description, .card:hover .card__description {
     opacity: 1; }
+  .card:active {
+    opacity: 0.7; }
   .card--focused .card__description {
     opacity: 1; }
 

@@ -10,31 +10,13 @@
     window.vendor.activateJs();
   }
 
-  var onTogglerClickMenuToggle = function () {
-    if (!menuToggler.classList.contains('main-nav__button--close')) {
-      window.vendor.openMenu();
-    } else {
-      window.vendor.closeMenu();
-    }
-  };
-
   cards.forEach(function (it) {
-    var button = it.querySelector('.card__button');
-    if (button) {
-      button.addEventListener('focus', function () {
-        window.vendor.toggleDescription(it);
-      });
-      button.addEventListener('blur', function () {
-        window.vendor.toggleDescription(it);
-      });
-    }
+    window.vendor.onCardButtonFocusBlurCardToggle(it);
   });
 
   telInput.addEventListener('input', function () {
     window.vendor.validateTelInput(telInput);
   });
 
-  menuToggler.addEventListener('click', onTogglerClickMenuToggle);
-
-  objectFitImages();
+  menuToggler.addEventListener('click', window.vendor.onTogglerClickMenuToggle);
 })();
