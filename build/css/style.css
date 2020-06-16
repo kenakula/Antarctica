@@ -331,9 +331,6 @@ body {
 img {
   display: block; }
 
-svg {
-  fill: inherit; }
-
 .button {
   display: block;
   border: 0;
