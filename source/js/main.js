@@ -35,4 +35,6 @@
   });
 
   menuToggler.addEventListener('click', onTogglerClickMenuToggle);
+
+  objectFitImages();
 })();

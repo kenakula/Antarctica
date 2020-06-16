@@ -1060,7 +1060,8 @@ svg {
     width: 100%;
     max-width: 100%;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    font-family: 'object-fit: cover;'; }
 
 .card__description {
   -webkit-transition: all 0.2s ease-in;
