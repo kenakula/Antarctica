@@ -369,13 +369,13 @@ img {
   min-height: 650px;
   color: #f9fbfd;
   background-color: #87a7d4;
-  background-image: url("../img/header-bg-desktop@1x.jpg");
+  background-image: url("../img/header-bg-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  @media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/header-bg-desktop@2x.jpg"); } }
+      background-image: url("../img/header-bg-desktop@1x.jpg"); } }
 
 .page-header__top {
   display: -webkit-box;
@@ -408,10 +408,10 @@ img {
 @media (max-width: 1023px) {
   .page-header {
     min-height: 638px;
-    background-image: url("../img/header-bg-tablet@1x.jpg"); } }
-  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/header-bg-tablet@2x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1023px) and (max-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/header-bg-tablet@2x.jpg"); } }
+      background-image: url("../img/header-bg-tablet@1x.jpg"); } }
 
 @media (max-width: 1023px) {
   .page-header__top {
@@ -434,10 +434,10 @@ img {
 @media (max-width: 767px) {
   .page-header {
     min-height: 500px;
-    background-image: url("../img/header-bg-mobile@1x.jpg"); } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/header-bg-mobile@2x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 767px) and (max-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/header-bg-mobile@2x.jpg"); } }
+      background-image: url("../img/header-bg-mobile@1x.jpg"); } }
 
 @media (max-width: 767px) {
   .page-header__top {
@@ -749,13 +749,13 @@ img {
   width: 48.275%;
   min-height: 301px;
   background-color: #869bc3;
-  background-image: url("../img/promo-bg-desktop@1x.jpg");
+  background-image: url("../img/promo-bg-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  @media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 1.5dppx) {
     .promo__img-wrap {
-      background-image: url("../img/promo-bg-desktop@2x.jpg"); } }
+      background-image: url("../img/promo-bg-desktop@1x.jpg"); } }
 
 .promo__linebreak {
   display: none; }
@@ -773,10 +773,10 @@ img {
   .promo__img-wrap {
     width: 47.787%;
     min-height: 264px;
-    background-image: url("../img/promo-bg-tablet@1x.jpg"); } }
-  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/promo-bg-tablet@2x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1023px) and (max-resolution: 1.5dppx) {
     .promo__img-wrap {
-      background-image: url("../img/promo-bg-tablet@2x.jpg"); } }
+      background-image: url("../img/promo-bg-tablet@1x.jpg"); } }
 
 @media (max-width: 1023px) {
   .promo__linebreak {
@@ -802,10 +802,10 @@ img {
   .promo__img-wrap {
     width: 100%;
     min-height: 186px;
-    background-image: url("../img/promo-bg-mobile@1x.jpg"); } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/promo-bg-mobile@2x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 767px) and (max-resolution: 1.5dppx) {
     .promo__img-wrap {
-      background-image: url("../img/promo-bg-mobile@2x.jpg"); } }
+      background-image: url("../img/promo-bg-mobile@1x.jpg"); } }
 
 @media (max-width: 767px) {
   .promo__linebreak {
@@ -814,13 +814,13 @@ img {
 .advantages {
   padding: 110px 0 100px;
   background-color: #e3ecf6;
-  background-image: url("../img/advantages-bg-desktop@1x.jpg");
+  background-image: url("../img/advantages-bg-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  @media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 1.5dppx) {
     .advantages {
-      background-image: url("../img/advantages-bg-desktop@2x.jpg"); } }
+      background-image: url("../img/advantages-bg-desktop@1x.jpg"); } }
   .advantages h2 {
     margin: 0;
     font-size: 1.75rem;
@@ -1140,13 +1140,13 @@ img {
   padding: 50px 0;
   min-height: 555px;
   background-color: #c5dbf5;
-  background-image: url("../img/booking-bg-desktop@1x.jpg");
+  background-image: url("../img/booking-bg-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  @media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 1.5dppx) {
     .booking {
-      background-image: url("../img/booking-bg-desktop@2x.jpg"); } }
+      background-image: url("../img/booking-bg-desktop@1x.jpg"); } }
 
 .booking__container {
   display: -webkit-box;
@@ -1181,10 +1181,10 @@ img {
 @media (max-width: 1023px) {
   .booking {
     padding: 88px 0 100px;
-    background-image: url("../img/booking-bg-tablet@1x.jpg"); } }
-  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/booking-bg-tablet@2x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1023px) and (max-resolution: 1.5dppx) {
     .booking {
-      background-image: url("../img/booking-bg-tablet@2x.jpg"); } }
+      background-image: url("../img/booking-bg-tablet@1x.jpg"); } }
 
 @media (max-width: 1023px) {
   .booking__container {

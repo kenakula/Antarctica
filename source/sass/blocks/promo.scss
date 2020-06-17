@@ -27,13 +27,13 @@
   width: 48.275%;
   min-height: 301px;
   background-color: $promo-bg;
-  background-image: url("../img/promo-bg-desktop@1x.jpg");
+  background-image: url("../img/promo-bg-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 
-  @media (min-resolution: $retina) {
-    background-image: url("../img/promo-bg-desktop@2x.jpg");
+  @media (max-resolution: $retina) {
+    background-image: url("../img/promo-bg-desktop@1x.jpg");
   }
 }
 
@@ -60,10 +60,10 @@
   .promo__img-wrap {
     width: 47.787%;
     min-height: 264px;
-    background-image: url("../img/promo-bg-tablet@1x.jpg");
+    background-image: url("../img/promo-bg-tablet@2x.jpg");
 
-    @media (min-resolution: $retina) {
-      background-image: url("../img/promo-bg-tablet@2x.jpg");
+    @media (max-resolution: $retina) {
+      background-image: url("../img/promo-bg-tablet@1x.jpg");
     }
   }
 
@@ -99,10 +99,10 @@
   .promo__img-wrap {
     width: 100%;
     min-height: 186px;
-    background-image: url("../img/promo-bg-mobile@1x.jpg");
+    background-image: url("../img/promo-bg-mobile@2x.jpg");
 
-    @media (min-resolution: $retina) {
-      background-image: url("../img/promo-bg-mobile@2x.jpg");
+    @media (max-resolution: $retina) {
+      background-image: url("../img/promo-bg-mobile@1x.jpg");
     }
   }
 

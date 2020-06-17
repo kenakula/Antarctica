@@ -1,13 +1,13 @@
 .advantages {
   padding: 110px 0 100px;
   background-color: $advantages-bg;
-  background-image: url("../img/advantages-bg-desktop@1x.jpg");
+  background-image: url("../img/advantages-bg-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
 
-  @media (min-resolution: $retina) {
-    background-image: url("../img/advantages-bg-desktop@2x.jpg");
+  @media (max-resolution: $retina) {
+    background-image: url("../img/advantages-bg-desktop@1x.jpg");
   }
 
   h2 {

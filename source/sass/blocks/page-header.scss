@@ -3,13 +3,13 @@
   min-height: 650px;
   color: $white;
   background-color: $header-bg;
-  background-image: url("../img/header-bg-desktop@1x.jpg");
+  background-image: url("../img/header-bg-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 
-  @media (min-resolution: $retina) {
-    background-image: url("../img/header-bg-desktop@2x.jpg");
+  @media (max-resolution: $retina) {
+    background-image: url("../img/header-bg-desktop@1x.jpg");
   }
 }
 
@@ -48,10 +48,10 @@
 @media (max-width: $desktop) {
   .page-header {
     min-height: 638px;
-    background-image: url("../img/header-bg-tablet@1x.jpg");
+    background-image: url("../img/header-bg-tablet@2x.jpg");
 
-    @media (min-resolution: $retina) {
-      background-image: url("../img/header-bg-tablet@2x.jpg");
+    @media (max-resolution: $retina) {
+      background-image: url("../img/header-bg-tablet@1x.jpg");
     }
   }
 
@@ -85,10 +85,10 @@
 @media (max-width: $tablet) {
   .page-header {
     min-height: 500px;
-    background-image: url("../img/header-bg-mobile@1x.jpg");
+    background-image: url("../img/header-bg-mobile@2x.jpg");
 
-    @media (min-resolution: $retina) {
-      background-image: url("../img/header-bg-mobile@2x.jpg");
+    @media (max-resolution: $retina) {
+      background-image: url("../img/header-bg-mobile@1x.jpg");
     }
   }
 
