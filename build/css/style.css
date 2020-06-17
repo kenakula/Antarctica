@@ -990,10 +990,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+      flex-wrap: wrap; }
 
 @media (max-width: 1023px) {
   .cruises {
@@ -1029,6 +1026,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+  margin-right: 2.654%;
   width: 23.008%;
   min-height: 386px;
   cursor: pointer; }
@@ -1038,6 +1036,8 @@ img {
     opacity: 0.7; }
   .card--focused .card__description {
     opacity: 1; }
+  .card:nth-child(4n), .card:last-child {
+    margin-right: 0; }
 
 .card__figure {
   position: relative;
@@ -1111,7 +1111,10 @@ img {
 
 @media (max-width: 1023px) {
   .card {
+    margin-right: 4.629%;
     width: 47.685%; }
+    .card:nth-child(2n) {
+      margin-right: 0; }
   .card__figure figcaption {
     bottom: 26px;
     left: 36px; }
@@ -1120,6 +1123,7 @@ img {
 
 @media (max-width: 767px) {
   .card {
+    margin-right: 0;
     width: 100%; }
   .card__figure figcaption {
     bottom: 17px;
