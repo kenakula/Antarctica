@@ -8,6 +8,8 @@
 
   &:focus,
   &:hover {
+    // box-shadow: 0 5px 5px $black;
+
     .card__description {
       opacity: 1;
     }
@@ -45,7 +47,8 @@
 
   img {
     width: 100%;
-    max-width: 100%;
+    // max-width: 100%;
+    height: 100%;
     object-fit: cover;
     // для полифилла
     font-family: "object-fit: cover;"; /* stylelint-disable-line */
