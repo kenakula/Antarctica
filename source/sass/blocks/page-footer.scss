@@ -56,6 +56,10 @@
   }
 }
 
+.page-footer__socials {
+  min-width: 117px;
+}
+
 @media (max-width: $desktop) {
   .page-footer {
     min-height: 120px;
@@ -77,6 +81,10 @@
   .page-footer__link {
     font-size: rem(12);
     line-height: 15px;
+  }
+
+  .page-footer__socials {
+    min-width: 92px;
   }
 }
 

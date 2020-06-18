@@ -1,11 +1,13 @@
 .main-nav {
   position: relative;
   padding-top: 9px;
+  padding-left: 50px;
   min-width: 51.2%;
 }
 
 .main-nav__button {
   display: none;
+  outline: none;
 }
 
 .main-nav__list {
@@ -58,6 +60,7 @@
 @media (max-width: $tablet) {
   .main-nav {
     position: relative;
+    padding-left: 0;
     width: 100%;
   }
 

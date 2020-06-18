@@ -10,9 +10,9 @@
     window.vendor.activateJs();
   }
 
-  for (var i = 0; i < cards.length; i++) {
-    window.vendor.onCardButtonFocusBlurCardToggle(cards[i]);
-  }
+  cards.forEach(function (it) {
+    window.vendor.onCardButtonFocusBlurCardToggle(it);
+  });
 
   telInput.addEventListener('input', function () {
     window.vendor.validateTelInput(telInput);
